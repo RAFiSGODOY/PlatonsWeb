@@ -42,7 +42,7 @@ Acesse a versão final do projeto clicando [aqui] - **status: em desenvolvimento
 
 ### 1. Página Inicial
 
-![Página Inicial](/platons/public/assets/images/readme/1.png)
+![Página Inicial](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/1.png?raw=true)
 
 A página inicial apresenta a logo, slogan do clube, data de criação, cidade em que pertence.
 
