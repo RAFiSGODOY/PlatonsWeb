@@ -10,7 +10,7 @@ Bem-vindo ao **Platons Moto Clube**! Este projeto foi desenvolvido para o **Prim
 
 Confira o design do projeto no [Figma](https://www.figma.com/design/2xVQfNJJKUvtx2f8jEmhTo/Platons-Moto-Clube?node-id=0-1&t=vJLCixOqAhqkz5eU-1).
 
-![Figma do Projeto](/platons/public/assets/images/readme/figma.png)
+![Figma do Projeto](/readme/figma.png)
 
 ---
 
