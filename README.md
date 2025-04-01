@@ -1,6 +1,6 @@
 # Platons Moto Clube - Website - em desenvolvimento 
 
-![Logo do Platons Moto Clube](./assets/images/logo.png)
+![Logo do Platons Moto Clube](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/logo.png?raw=true)
 
 Bem-vindo ao **Platons Moto Clube**! Este projeto foi desenvolvido para o **Primeiro Moto Clube de Peabiru-PR**, com o objetivo de divulgar o clube, seus eventos e campanhas beneficentes. Utilizamos as tecnologias mais modernas como **React**, **Vite**, **Tailwind CSS**, e **JSX** para criar uma experiência interativa, rápida e acessível para todos os usuários.
 
@@ -10,7 +10,7 @@ Bem-vindo ao **Platons Moto Clube**! Este projeto foi desenvolvido para o **Prim
 
 Confira o design do projeto no [Figma](https://www.figma.com/design/2xVQfNJJKUvtx2f8jEmhTo/Platons-Moto-Clube?node-id=0-1&t=vJLCixOqAhqkz5eU-1).
 
-![Figma do Projeto](~/readme/figma.png)
+![Figma do Projeto](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/figma.png?raw=true)
 
 ---
 
@@ -34,7 +34,7 @@ O objetivo do **Platons Moto Clube** é proporcionar aos membros e à comunidade
 
 Acesse a versão final do projeto clicando [aqui] - **status: em desenvolvimento**.
 
-![Tela Inicial do Website](/platons/public/assets/images/readme/1.png)
+![Tela Inicial do Website](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/1.png?raw=true)
 
 ---
 
@@ -42,28 +42,28 @@ Acesse a versão final do projeto clicando [aqui] - **status: em desenvolvimento
 
 ### 1. Página Inicial
 
-![Página Inicial](/platons/public/assets/images/readme/1.png)
+![Página Inicial](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/1.png?raw=true)
 
 A página inicial apresenta a logo, slogan do clube, data de criação, cidade em que pertence.
 
 ### 2. Página Sobre o Moto Clube
 
-![Sobre](/platons/public/assets/images/readme/2.png)
+![Sobre](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/2.png?raw=true)
 
 Para os usuários poderem conhecer um pouco da história do moto clube.
 
 ### 3. Página de Recordações
 
-![Recordações](/platons/public/assets/images/readme/3.png)
+![Recordações](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/3.png?raw=true)
 
 Aqui, poderão ver as fotos mais recentes de eventos ou campanhas beneficentes, ao acessar o botão "Mais" poderão ver todas as recordações.
 
-![Recordações](/platons/public/assets/images/readme/1recor.png) - ![Recordações](/platons/public/assets/images/readme/2record.png)
+![Recordações](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/1recor.png?raw=true) - ![Recordações](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/2record.png?raw=true)
 
 
 ### 4. Página de Eventos
 
-![Eventos](/platons/public/assets/images/readme/4.png)
+![Eventos](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/4.png?raw=true)
 
 Aqui os usuários irão ver as informações dos eventos mais recentes e ao acessar o botão "Mais" poderão ver todos eventos ja propostos pelo Moto Clube Platons.
 
@@ -73,19 +73,20 @@ Aqui os usuários irão ver as informações dos eventos mais recentes e ao aces
 
 Pagina destinada a mostrar informações sobre os eventos, valor, localização, patrocinadores, bandas etc.
 
-![Eventos](/platons/public/assets/images/readme/1info.png) - ![Eventos](/platons/public/assets/images/readme/2info.png) - ![Eventos](/platons/public/assets/images/readme/3info.png) - ![Eventos](/platons/public/assets/images/readme/4info.png)
+![Eventos](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/1info.png?raw=true) - ![Eventos](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/2info.png?raw=true) - ![Eventos](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/3info.png?raw=true) - ![Eventos](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/4info.png?raw=true)
 
 
 
 ### 5. Página da Equipe
 
-![Equipe](/platons/public/assets/images/readme/5.png)
+![Equipe](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/5.png?raw=true)
 
 Informações sobre a equipe completa de Administração do Moto Clube.
 
 ### 6. Página de Contato
 
-![Contato](/platons/public/assets/images/readme/6.png)
+![Contato](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/6.png?raw=true)
+![Contato](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/7.png?raw=true)
 
 Para os interessados entrarem em contato com o Moto clube afim de sanear suas duvidas ou curiosidades.
 
