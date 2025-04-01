@@ -24,7 +24,7 @@ function Main() {
              fontSize: "var(--font-xll)",  // Usa a variável CSS
         }}
         >
-         Queimando asfalto,  libertando almas
+         QUEIMANDO O ASFALTO, LIBERTANDO ALMAS
         </p>
 
       </div>
