@@ -1,6 +1,6 @@
 # Platons Moto Clube - Website - em desenvolvimento 
 
-![Logo do Platons Moto Clube](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/logo.png?raw=true)
+![Logo do Platons Moto Clube](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/PLATON%C2%B4S%20(29).png?raw=true)
 
 Bem-vindo ao **Platons Moto Clube**! Este projeto foi desenvolvido para o **Primeiro Moto Clube de Peabiru-PR**, com o objetivo de divulgar o clube, seus eventos e campanhas beneficentes. Utilizamos as tecnologias mais modernas como **React**, **Vite**, **Tailwind CSS**, e **JSX** para criar uma experiência interativa, rápida e acessível para todos os usuários.
 
@@ -10,7 +10,7 @@ Bem-vindo ao **Platons Moto Clube**! Este projeto foi desenvolvido para o **Prim
 
 Confira o design do projeto no [Figma](https://www.figma.com/design/2xVQfNJJKUvtx2f8jEmhTo/Platons-Moto-Clube?node-id=0-1&t=vJLCixOqAhqkz5eU-1).
 
-![Figma do Projeto](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/figma.png?raw=true)
+![Figma do Projeto](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/Captura%20de%20tela%202025-04-02%20171018.png?raw=true)
 
 ---
 
@@ -34,7 +34,7 @@ O objetivo do **Platons Moto Clube** é proporcionar aos membros e à comunidade
 
 Acesse a versão final do projeto clicando [aqui] - **status: em desenvolvimento**.
 
-![Tela Inicial do Website](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/1.png?raw=true)
+![Tela Inicial do Website](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/telaini1.png?raw=true)
 
 ---
 
@@ -42,13 +42,13 @@ Acesse a versão final do projeto clicando [aqui] - **status: em desenvolvimento
 
 ### 1. Página Inicial
 
-![Página Inicial](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/1.png?raw=true)
+![Página Inicial](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/telaini1.png?raw=true)
 
 A página inicial apresenta a logo, slogan do clube, data de criação, cidade em que pertence.
 
 ### 2. Página Sobre o Moto Clube
 
-![Sobre](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/2.png?raw=true)
+![Sobre](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/sobre1.png?raw=true)
 
 Para os usuários poderem conhecer um pouco da história do moto clube.
 
