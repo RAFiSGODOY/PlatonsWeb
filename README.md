@@ -67,7 +67,7 @@ Aqui, poderão ver as fotos mais recentes de eventos ou campanhas beneficentes, 
 
 Aqui os usuários irão ver as informações dos eventos mais recentes e ao acessar o botão "Mais" poderão ver todos eventos ja propostos pelo Moto Clube Platons.
 
-![Eventos](/platons/public/assets/images/readme/1event.png) - ![Eventos](/platons/public/assets/images/readme/2event.png) - ![Eventos](/platons/public/assets/images/readme/3event.png)
+![Eventos](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/Captura%20de%20tela%202025-04-01%20175655.png?raw=true) - ![Eventos](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/Captura%20de%20tela%202025-04-01%20175705.png?raw=true) - ![Eventos](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/Captura%20de%20tela%202025-04-01%20175711.png?raw=true)
 
 ### 4.1 Página para Participação em Eventos
 
