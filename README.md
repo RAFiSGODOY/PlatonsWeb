@@ -34,7 +34,7 @@ O objetivo do **Platons Moto Clube** é proporcionar aos membros e à comunidade
 
 Acesse a versão final do projeto clicando [aqui] - **status: em desenvolvimento**.
 
-![Tela Inicial do Website](/platons/public/assets/images/readme/1.png)
+![Tela Inicial do Website](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/telaini1.png?raw=true)
 
 ---
 
@@ -42,13 +42,13 @@ Acesse a versão final do projeto clicando [aqui] - **status: em desenvolvimento
 
 ### 1. Página Inicial
 
-![Página Inicial](/platons/public/assets/images/readme/1.png)
+![Página Inicial](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/telaini1.png?raw=true)
 
 A página inicial apresenta a logo, slogan do clube, data de criação, cidade em que pertence.
 
 ### 2. Página Sobre o Moto Clube
 
-![Sobre](/platons/public/assets/images/readme/2.png)
+![Sobre](https://github.com/RAFiSGODOY/PlatonsWeb/blob/RAFiSGODOY-patch-1/sobre1.png?raw=true)
 
 Para os usuários poderem conhecer um pouco da história do moto clube.
 
