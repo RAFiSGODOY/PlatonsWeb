@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './inicial.css';
 
 function Inicial() {
@@ -30,8 +29,8 @@ function Inicial() {
             Moto Clube - Peabiru-PR<br/>Since 2024
           </p>
         </div>
-        <div class="cloud">
-          <img src="https://demos.creative-tim.com/paper-kit-react/static/media/clouds.3c700c13.png" alt="Neblina" class="img_cloud"/>
+        <div className="cloud">
+          <img src="https://demos.creative-tim.com/paper-kit-react/static/media/clouds.3c700c13.png" alt="Neblina" className="img_cloud"/>
         </div>
       </div>
       <div className="bg-gradient-overlay-bottom"></div>

@@ -1,3 +1,8 @@
+.mirrored {
+    transform: scaleX(-1);
+  }
+
+  
 
 .bg-gradient-overlay-top {
     position: absolute;
@@ -18,7 +23,19 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 90%);
     z-index: 10;
 }
-  
-.image-container{
-    width:60%;
+
+.botao-efeito {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.botao-efeito:hover {
+  background-color: #ffcc00; 
+  color: #000;
+  transform: scale(1.05); 
+}
+
+.botao-efeito:active {
+  transform: scale(0.95); 
 }
