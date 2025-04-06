@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { DollarSign, Clock, MapPin, Info, Gift } from "lucide-react";
 import { DateTime } from "luxon";  // Importa o Luxon
 import "./detail-event.css";
@@ -29,6 +29,45 @@ const EventoDetalhes = ({ evento }) => {
     const format = (d) => d.toFormat("yyyyMMdd'T'HHmmss");
     return `${format(start)}/${format(end)}`;
   };
+
+
+  const mapContainerRef = useRef(null);
+
+  useEffect(() => {
+    // Inicializa o mapa quando o componente for montado
+    const script = document.createElement("script");
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}&callback=initMap`;
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+
+    window.initMap = () => {
+      const map = new window.google.maps.Map(mapContainerRef.current, {
+        center: { lat: -23.55052, lng: -46.633308 }, // Padrão São Paulo
+        zoom: 14,
+      });
+
+      // Adiciona o marcador no mapa com base no endereço
+      const geocoder = new window.google.maps.Geocoder();
+      geocoder.geocode({ address: location }, (results, status) => {
+        if (status === "OK") {
+          map.setCenter(results[0].geometry.location);
+          new window.google.maps.Marker({
+            map: map,
+            position: results[0].geometry.location,
+          });
+        } else {
+          alert("Não foi possível localizar o endereço.");
+        }
+      });
+    };
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, [location]);
+
+
 
   return (
     <div className="min-h-screen relative">
@@ -85,11 +124,11 @@ const EventoDetalhes = ({ evento }) => {
                   </h2>
                   <div className="flex w-full justify-center items-center gap-2">
                     <DollarSign size={30} className="value" />
-                  <div className="bg-gray-200 p-4 rounded-lg flex items-center w-full  gap-2 shadow-inner">
-                    <p className="text-xxl value2 text-center w-full">{evento.value}</p>
+                    <div className="bg-gray-200 p-4 rounded-lg flex items-center w-full  gap-2 shadow-inner">
+                      <p className="text-xxl value2 text-center w-full">{evento.value}</p>
+                    </div>
                   </div>
-                  </div>
-                  
+
                 </div>
 
                 {/* Programação */}
@@ -102,14 +141,14 @@ const EventoDetalhes = ({ evento }) => {
                       <div className="space-y-4">
                         {periodo.events.map((item, itemIndex) => (
                           <div className="flex w-full justify-center items-center gap-2">
-                          <Clock size={30} className="text-gray-800 back-icone " />
-                          <div key={itemIndex} className="bg-gray-200 p-2  shadow-inner w-full rounded-lg flex items-center gap-0">
-                            
-                            <div className="justify-center flex flex-col w-full">
-                              <p className="text-xxl text-center font-jaini text-gray-800">{item.time}</p>
-                              <p className="text-gray-700 text-center text-base font-jaini">({item.description})</p>
+                            <Clock size={30} className="text-gray-800 back-icone " />
+                            <div key={itemIndex} className="bg-gray-200 p-2  shadow-inner w-full rounded-lg flex items-center gap-0">
+
+                              <div className="justify-center flex flex-col w-full">
+                                <p className="text-xxl text-center font-jaini text-gray-800">{item.time}</p>
+                                <p className="text-gray-700 text-center text-base font-jaini">({item.description})</p>
+                              </div>
                             </div>
-                           </div>
                           </div>
                         ))}
                       </div>
@@ -118,20 +157,31 @@ const EventoDetalhes = ({ evento }) => {
                 </div>
               </div>
 
-              {/* Calendário + Local + Bandas */}
+
               <div className="space-y-8">
-                {/* Calendário */}
-                <div className="flex flex-col items-center gap-1 bg-gray-100 shadow-inner rounded-md">
-                  <h2 className="text-lg font-jaini text-center mt-4 text-gray-800">
-                    Data do Evento
-                  </h2>
-                  <div className="flex flex-col p-4">
-                    <div className="bg-gray-200 shadow-inner text-secondary font-jaini rounded-lg justify-center flex items-center">
+
+                <div className="flex flex-col items-center p-2 gap-5 rounded-md bg-gray-100">
+                <h2 className="text-lg font-jaini text-center  text-gray-800">
+                        Data e Endereço
+                      </h2>
+                  <div className="flex flex-col sm:flex-row gap-2 w-full">
+                    <div className="bg-gray-200 shadow-inner text-secondary font-jaini rounded-lg flex sm:w-auto w-full">
                       <CalendarioEvento value={selectedDate} onChange={handleDateChange} />
                     </div>
+                    <div className="relative w-full sm:w-1/2 rounded-md overflow-hidden">
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        frameBorder="0"
+                        style={{ border: 0 }}
+                        src={`https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=${encodeURIComponent(evento.location)}`}
+                        allowFullScreen
+                        aria-hidden="false"
+                        tabIndex="0"
+                      ></iframe>
+                    </div>
                   </div>
-                  <div className="flex justify-center mb-2">
-                    {/* Usando selectedDate ao invés de value */}
+                  <div className="justify-center flex mb-2">
                     <a
                       href={`https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
                         evento.title
@@ -140,18 +190,15 @@ const EventoDetalhes = ({ evento }) => {
                       )}&location=${encodeURIComponent(evento.location)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-botton text-background px-10 py-2 rounded-lg font-jaini text-xl text-center"
+                      className="bg-botton text-secondary p-15 py-2 rounded-lg font-jaini text-xl text-center"
                     >
-                      Salvar na Agenda
+                      Salvar na Agenda 
                     </a>
                   </div>
                 </div>
 
-                {/* Local */}
-                <div className="flex items-center gap-3 text-secondary font-semibold text-base bg-gray-800 p-4 rounded-md">
-                  <MapPin size={20} className="text-botton" />
-                  {evento.location}
-                </div>
+
+
 
                 {/* Bandas */}
                 {evento.bands?.length > 0 && (
