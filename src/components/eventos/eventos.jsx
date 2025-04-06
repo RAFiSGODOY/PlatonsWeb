@@ -1,56 +1,68 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { Calendar } from "lucide-react";
+import "./eventos.css";
 
-const eventos = [
-  {
-    id: 1,
-    imagem: "../../../assets/images/eventos/campanhabeneficente03.jpeg",
-    titulo: "1° Moto Fest - Peabiru",
-    data: "08/06/25",
-  },
-  {
-    id: 2,
-    imagem: "../../../assets/images/eventos/1motofest.jpeg",
-    titulo: "Campanha Beneficente",
-    data: "03/03/25",
-  },
-];
+const Timeline = ({ eventos }) => {
+  const navigate = useNavigate();
 
-const Eventosinfo = () => {
   return (
-    
-      <div className="relative flex flex-col items-center max-w-5xl mx-auto">
-        {/* Linha principal conectando todos os eventos */}
-        <div className="absolute w-1 bg-gray-400 h-full top-0 left-1/2 transform -translate-x-1/2 md:block hidden" />
-        
-        {eventos.map((evento, index) => (
+    <div className="relative w-full py-20 text-primary flex flex-col items-center">
+      <h2 className="text-center text-xxl font-jaini font-bold px-4 z-10 relative">
+        Eventos
+      </h2>
+      <div className="absolute hidden sm:block left-1/2 top-32 bottom-32 w-px bg-white transform -translate-x-1/2 z-0" />
+      <div className="relative flex flex-col items-center gap-10 mt-10 z-10 w-full px-4">
+        {eventos.slice(0, 2).map((evento, index) => (
           <div
             key={evento.id}
-            className="relative w-full flex flex-col items-center mb-10"
+            className={`relative flex w-full max-w-5xl items-center ${
+              index % 2 === 0 ? "lg:flex-row-reverse" : "lg:flex-row"
+            } flex-col gap-8 lg:gap-0`}
           >
-            {/* Linha horizontal conectando a imagem */}
-            <div className="absolute w-16 h-1 bg-gray-400 top-1/2 transform -translate-y-1/2 left-1/2 -translate-x-1/2 md:block hidden" />
-
-            <div className="flex flex-col items-center text-center">
+            <div
+              className={`absolute top-1/2 h-px w-16 bg-white ${
+                index % 2 === 0 ? "left-1/2" : "right-1/2"
+              } transform -translate-y-1/2`}
+            />
+            <div className="w-full lg:w-[55%] flex justify-center z-10">
               <img
-                src={evento.imagem}
-                alt={evento.titulo}
-                className="w-48 h-48 md:w-60 md:h-60 rounded-full object-cover border-4 border-white shadow-lg"
+                src={evento.image}
+                alt={evento.title}
+                className="w-74 h-74 rounded-full object-cover border-2"
               />
-              <h3 className="text-primary text-xl md:text-2xl font-jaini mt-4">
-                {evento.titulo}
+            </div>
+            <div className="w-full lg:w-[30%] flex flex-col items-center text-center card-effect opacity-40">
+              <h3 className="text-xxl font-jaini text-primary rounded ">
+                {evento.title}
               </h3>
-              <p className="text-primary font-jaini text-base">{evento.data}</p>
-              <button className="mt-4 px-6 py-2 bg-primary text-background font-jaini rounded-lg shadow-md hover:bg-gray-200">
+              <p className="text-base font-jaini break-words text-botton rounded flex items-center gap-2">
+                <Calendar className="w-4 h-4 text-botton" />
+                {evento.date}
+              </p>
+              <button
+                onClick={() => navigate(`/Informação-Evento/${evento.id}`)}
+                className="mt-5 mb-10 px-10 py-2 text-base bg-secondary text-background font-jaini rounded-lg shadow-md botao-efeito"
+              >
                 Ver Informações
               </button>
             </div>
           </div>
         ))}
-        <button className="mt-6 px-4 py-2 bg-primary text-background font-jaini rounded-md shadow-md hover:bg-gray-600 z-1">
+      </div>
+      <div className="mt-10 text-center z-20">
+        <button
+          className="px-6 py-3 bg-secondary text-background font-jaini text-sm rounded-lg botao-efeito opacity-40"
+          onClick={(e) => {
+            e.preventDefault();
+            navigate("/Eventos");
+          }}
+        >
           Mais Eventos
         </button>
       </div>
+    </div>
   );
 };
 
-export default Eventosinfo;
+export default Timeline;

@@ -1,0 +1,223 @@
+[
+    {
+      "id": 1,
+      "title": "1° Moto Fest - Peabiru",
+      "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais e para gerar textos e comentários totalmente em branco. Neste artigo, os jogadores podem criar nicks com os três tamanhos do espaço invisível através das ferramentas a seguir, que também permitem complementar o nome com vários outros símbolos, letras e caracteres especiais.",
+      "value": "R$: 15 reais + 1kg de alimento",
+      "location": "Av. Irmãos Pereira, 910 - Centro, Campo Mourão - PR, 87300-000",
+      "date": "2025-06-01T08:30:00",
+      "image": "../../../assets/images/eventos/1motofest.jpeg",
+      "free": 0,
+      "schedule": [
+        {
+          "title": "Programação - Manhã",
+          "events": [
+            {
+              "time": "08:00 - 10:00",
+              "description": "Horário de início ao café da manhã"
+            },
+            {
+              "time": "10:00 - 12:00",
+              "description": "Banda jofjsbdfbfbsb"
+            }
+          ]
+        },
+        {
+          "title": "Programação - Tarde",
+          "events": [
+            {
+              "time": "12:00 - 14:00",
+              "description": "Almoço e intervalo"
+            },
+            {
+              "time": "14:00 - 16:00",
+              "description": "Apresentação especial"
+            }
+          ]
+        },
+        {
+          "title": "Programação - Noite",
+          "events": [
+            {
+              "time": "18:00 - 20:00",
+              "description": "Show principal"
+            },
+            {
+              "time": "20:00 - 22:00",
+              "description": "Encerramento e agradecimentos"
+            }
+          ]
+        }
+      ],
+      "bands": [
+        {
+          "name": "Nome da Banda 1",
+          "image": "../../../assets/images/bandas/banda1.jpeg",
+          "info": "Informações sobre a banda 1"
+        },
+        {
+          "name": "Nome da Banda 2",
+          "image": "../../../assets/images/bandas/banda2.jpeg",
+          "info": "Informações sobre a banda 2"
+        },
+        {
+          "name": "Nome da Banda 3",
+          "image": "../../../assets/images/bandas/banda3.jpeg",
+          "info": "Informações sobre a banda 3"
+        }
+      ],
+      "sponsors": [
+        "../../../assets/images/patrocinadores/logo1.png",
+        "../../../assets/images/patrocinadores/logo2.png",
+        "../../../assets/images/patrocinadores/logo3.png"
+      ]
+    
+    },
+    {
+        "id": 2,
+        "title": "Campanha Beneficente",
+        "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais e para gerar textos e comentários totalmente em branco. Neste artigo, os jogadores podem criar nicks com os três tamanhos do espaço invisível através das ferramentas a seguir, que também permitem complementar o nome com vários outros símbolos, letras e caracteres especiais.",
+        "value": "Evento Gratuito",
+        "location": "Av. Irmãos Pereira, 910 - Centro, Campo Mourão - PR, 87300-000",
+        "date": "2025-12-01",
+        "image": "../../../assets/images/eventos/campanhabeneficente03.jpeg",
+        "free": 1,
+        "schedule": [
+          {
+            "title": "Programação - Manhã - Manhã",
+            "events": [
+              {
+                "time": "08:00 - 10:00",
+                "description": "Horário de início ao café da manhã"
+              },
+              {
+                "time": "10:00 - 12:00",
+                "description": "Banda jofjsbdfbfbsb"
+              }
+            ]
+          },
+          {
+            "title": "Programação - Tarde",
+            "events": [
+              {
+                "time": "12:00 - 14:00",
+                "description": "Almoço e intervalo"
+              },
+              {
+                "time": "14:00 - 16:00",
+                "description": "Apresentação especial"
+              }
+            ]
+          },
+          {
+            "title": "Programação - Noite",
+            "events": [
+              {
+                "time": "18:00 - 20:00",
+                "description": "Show principal"
+              },
+              {
+                "time": "20:00 - 22:00",
+                "description": "Encerramento e agradecimentos"
+              }
+            ]
+          }
+        ],
+        "bands": [
+          {
+            "name": "Nome da Banda 1",
+            "image": "../../../assets/images/bandas/banda1.jpeg",
+            "info": "Informações sobre a banda 1"
+          },
+          {
+            "name": "Nome da Banda 2",
+            "image": "../../../assets/images/bandas/banda2.jpeg",
+            "info": "Informações sobre a banda 2"
+          },
+          {
+            "name": "Nome da Banda 3",
+            "image": "../../../assets/images/bandas/banda3.jpeg",
+            "info": "Informações sobre a banda 3"
+          }
+        ],
+        "sponsors": [
+          "../../../assets/images/patrocinadores/logo1.png",
+          "../../../assets/images/patrocinadores/logo2.png",
+          "../../../assets/images/patrocinadores/logo3.png"
+        ]
+      },
+      {
+          "id": 3,
+          "title": "Campanha Beneficente",
+          "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais e para gerar textos e comentários totalmente em branco. Neste artigo, os jogadores podem criar nicks com os três tamanhos do espaço invisível através das ferramentas a seguir, que também permitem complementar o nome com vários outros símbolos, letras e caracteres especiais.",
+          "value": "15 reais + 1kg de alimento",
+          "location": "Av. Irmãos Pereira, 910 - Centro, Campo Mourão - PR, 87300-000",
+          "date": "2025-06-01T08:30:00",
+          "image": "../../../assets/images/eventos/campanhabeneficente03.jpeg",
+          "free": 0,
+          "schedule": [
+            {
+              "title": "Programação - Manhã",
+              "events": [
+                {
+                  "time": "08:00 - 10:00",
+                  "description": "Horário de início ao café da manhã"
+                },
+                {
+                  "time": "10:00 - 12:00",
+                  "description": "Banda jofjsbdfbfbsb"
+                }
+              ]
+            },
+            {
+              "title": "Programação - Tarde",
+              "events": [
+                {
+                  "time": "12:00 - 14:00",
+                  "description": "Almoço e intervalo"
+                },
+                {
+                  "time": "14:00 - 16:00",
+                  "description": "Apresentação especial"
+                }
+              ]
+            },
+            {
+              "title": "Programação - Noite",
+              "events": [
+                {
+                  "time": "18:00 - 20:00",
+                  "description": "Show principal"
+                },
+                {
+                  "time": "20:00 - 22:00",
+                  "description": "Encerramento e agradecimentos"
+                }
+              ]
+            }
+          ],
+          "bands": [
+            {
+              "name": "Nome da Banda 1",
+              "image": "../../../assets/images/bandas/banda1.jpeg",
+              "info": "Informações sobre a banda 1"
+            },
+            {
+              "name": "Nome da Banda 2",
+              "image": "../../../assets/images/bandas/banda2.jpeg",
+              "info": "Informações sobre a banda 2"
+            },
+            {
+              "name": "Nome da Banda 3",
+              "image": "../../../assets/images/bandas/banda3.jpeg",
+              "info": "Informações sobre a banda 3"
+            }
+          ],
+          "sponsors": [
+            "../../../assets/images/patrocinadores/logo1.png",
+            "../../../assets/images/patrocinadores/logo2.png",
+            "../../../assets/images/patrocinadores/logo3.png"
+          ]
+        }
+  ]
+  

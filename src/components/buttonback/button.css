@@ -1,0 +1,15 @@
+.botao-efeito {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 20;
+  }
+  
+  .botao-efeito:hover {
+    background-color: #ffcc00; 
+    color: #000;
+    transform: scale(1.05); 
+  }
+  
+  .botao-efeito:active {
+    transform: scale(0.95); 
+  }

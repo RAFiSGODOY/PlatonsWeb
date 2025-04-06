@@ -39,3 +39,8 @@
 .botao-efeito:active {
   transform: scale(0.95); 
 }
+
+
+.ajuste{
+  margin-top: -100px;
+}

@@ -26,10 +26,10 @@ function RecordacoesCarousel() {
   }, []);
 
   return (
-    <div className="flex justify-center items-center w-full px-4 md:px-0 relative">
+    <div className="flex flex-col justify-center items-center w-full md:px-0 relative">
       <div className="relative w-full max-w-7xl mx-auto overflow-hidden">
         <div
-          className="flex transition-transform duration-700 ease-in-out gap-x-4"
+          className="flex transition-transform duration-700 ease-in-out gap-x-1"
           style={{
             transform: `translateX(-${(currentIndex / totalSlides) * 100}%)`,
             width: `${(totalSlides / itemsPerSlide) * 100}%`,
@@ -38,7 +38,7 @@ function RecordacoesCarousel() {
           {list.map((item) => (
             <div
               key={item.id}
-              className="px-2"
+              className="px-1"
               style={{
                 width: isMobile ? "100%" : "33.33%",
               }}
@@ -61,19 +61,20 @@ function RecordacoesCarousel() {
         </div>
       </div>
 
-      
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 md:left-6 top-1/2 -translate-y-1/2 z-10 bg-primary text-background p-3 rounded-full botao-efeito"
-      >
-        ❮
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 z-10 bg-primary text-background p-3 rounded-full "
-      >
-        ❯
-      </button>
+      <div className="flex justify-center items-center gap-4 mt-4">
+        <button
+          onClick={prevSlide}
+          className="bg-primary text-background py-1 px-14 rounded botao-efeito"
+        >
+          ❮
+        </button>
+        <button
+          onClick={nextSlide}
+          className="bg-primary text-background py-1 px-14 rounded botao-efeito"
+        >
+          ❯
+        </button>
+      </div>
     </div>
   );
 }
