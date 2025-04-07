@@ -8,7 +8,7 @@ const BotaoVoltar = () => {
   return (
     <button
         onClick={() => navigate(-1)}
-        className=" flex top-4 left-4 botao-efeito  bg-botton text-background py-1 px-5 rounded-full shadow-lg fixed"
+        className=" flex top-1 left-1 botao-efeito text-background py-1 px-5 rounded-full shadow-lg fixed"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

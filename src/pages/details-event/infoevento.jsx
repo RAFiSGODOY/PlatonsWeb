@@ -18,17 +18,12 @@ const EventoDetalhesPage = () => {
   }
 
   return (
-    <div className="relative min-h-screen">
-      <img
-        src="/assets/images/infoevent.png"
-        alt="Recordações"
-        className="fixed top-0 left-0 w-full h-full object-cover z-0"
-      />
-      <div className="relative z-10 ">
+   
+      <div className="relative z-10 bg-background">
         <EventoDetalhes evento={evento} />
         <BotaoVoltar />
       </div>
-    </div>
+   
   );
 };
 

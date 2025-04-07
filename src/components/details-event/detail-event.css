@@ -66,30 +66,28 @@
 .pago{
   border-width: 1px;
   border-radius: 100px;
-  border-color: rgb(14, 161, 43);
-  background-color: rgba(14, 161, 43, 0.414);
-  color: #393939;
+  border-color: rgb(14, 161, 43) ;
+  background-color: rgba(14, 161, 43, 0.085) ;
+  color: rgba(14, 161, 43, 0.942) ;
 }
 
 .free{
   border-width: 1px;
   border-radius: 100px;
   border-color: #ffcc00;
-  background-color: #ffcc0062;
-  color: #393939;
+  background-color: #ffcc0023;
+  color: #ffcc00;
 }
 
 .icone{
-  color: rgb(18, 128, 40);
+  color: rgb(14, 161, 43) ;
 }
 .icone2{
-  color: #dcb107;
+  color: #ffcc00;
 
 }
 
 .card-description{
-  background-color: #cacaca48;
-  border-color: #a5a5a5;
   border-width: 1px;
   border-radius:10px;
   margin-left: 10px;
@@ -100,4 +98,22 @@
   border-radius: 100%;
   padding: 2px;
 }
+
+/* Por padrão mantém o tamanho normal */
+.calendar-wrapper .p-calendar {
+  height: auto;
+  transform: scale(1);
+  transform-origin: top left;
+}
+
+/* Em telas menores (ex: até 640px), escala para caber em 50px */
+@media (max-width: 640px) {
+  .calendar-wrapper .p-calendar {
+    transform: scale(0.5); /* ajusta até caber em 50px */
+    height: 50px;
+    overflow: hidden;
+  }
+}
+
+
 

@@ -26,6 +26,7 @@
     --font-xxl: 2.2rem;
     --font-xxxl: 4.45rem;
     --font-even: 3rem;
+    --font-title-evento:4rem;
   }
 
   @media (max-width: 768px) {
@@ -34,7 +35,7 @@
         --font-xl: 1.25rem;
         --font-xll: 1.25rem;
         --font-xxl: 2rem;
-        --font-xxxl: 2rem;
+        --font-xxxl: 3rem;
     }
 }
 
@@ -44,7 +45,7 @@
         --font-xl: 1rem;
         --font-xll: 1.3rem;
         --font-xxl: 1.8rem;
-        --font-xxxl: 1.8rem;
+        --font-xxxl: 2rem;
     }
 }
   
@@ -89,6 +90,7 @@
   .text-xxl { font-size: var(--font-xxl); }
   .text-xxxl { font-size: var(--font-xxxl); }
   .text-even { font-size: var(--font-even); }
+  .text-title-e { font-size: var(--font-title-evento); }
   
   .spacing-128 { padding: var(--spacing-128); }
   .spacing-64 { padding: var(--spacing-64); }
