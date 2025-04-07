@@ -19,3 +19,14 @@
     opacity: 100; 
     transform: scale(1.05);
   }
+
+  .efeito-image{
+    border-radius: 100%;
+
+  }
+
+  .efeito-image:hover{
+    border-radius: 0px;
+    transform: scale(1.10);
+
+  }

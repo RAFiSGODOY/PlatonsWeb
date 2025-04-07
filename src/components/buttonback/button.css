@@ -1,6 +1,6 @@
 .botao-efeito {
     transition: all 0.3s ease-in-out;
-    background-color: #ffcc00df; 
+    background-color: #ffffffe1; 
     cursor: pointer;
     z-index: 20;
   }

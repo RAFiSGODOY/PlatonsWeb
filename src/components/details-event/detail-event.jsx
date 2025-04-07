@@ -39,56 +39,24 @@ const EventoDetalhes = ({ evento }) => {
               alt={evento.title}
               className="absolute inset-0 h-full w-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/80 flex flex-col justify-end p-5">
+            <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/80 flex flex-col justify-end px-4">
               <h1 className="text-xxxl text-secondary mb-2 font-jaini">{evento.title}</h1>
 
-              <div className="space-y-2 w-full">
-                {/* Rótulos 0 e 100 */}
-                <div className="flex items-center justify-between text-sm text-gray-400 font-jaini px-1">
+              <div className="space-y-0 w-full">
+                <div className="flex items-center justify-between text-sm text-gray-400 font-jaini">
                   <span>R$: 0,00</span>
                   <span>R$: 100,00</span>
                 </div>
-
-                {/* Barra de progresso */}
-                <div className="relative h-4 rounded bg-gray-300 overflow-hidden z-2">
-                  {/* Preenchimento */}
-                  <div
-                    className="absolute  h-full bg-green-500"
-                    style={{ width: `${evento.value}%` }}
-                  >
-
-                  </div>
-                  <div
-                    className="absolute left-0 transform -translate-x-1/2"
-                    style={{ left: `${evento.value}%` }}
-                  >
-                    <div className="bg-green-500 text-green-500 text-xs shadow-md font-jaini">
-                      R$ {evento.value}
+                <div className="relative h-5 overflow-hidden">
+                  <div class="w-full bg-gray-100 rounded">
+                    <div class="bg-green-500 text-base font-jaini text-center justify-center text-secondary flex leading-none rounded"
+                      style={{ width: `${evento.value}%`}}>
+                      R$: {Number(evento.value).toFixed(2)}
                     </div>
                   </div>
                 </div>
-
-                {/* Indicador com linha descendo */}
-                {evento.value > 0 && evento.value < 100 && (<div
-                  className="absolute flex flex-col items-center"
-                  style={{
-                    left: `${evento.value}%`,
-                    transform: "translateX(-50%)",
-                    bottom: "55px",
-                  }}
-                >
-                  {/* Valor flutuante */}
-                  <div className="bg-green-500 text-white text-sm rounded-full px-1 py-0.5 font-jaini whitespace-nowrap shadow-md">
-                    R${parseFloat(evento.value).toFixed(2)}
-                  </div>
-                  {/* Linha descendo */}
-                  <div className="w-0.5 h-5 bg-green-500"></div>
-                </div>
-                )}
               </div>
-
-              {/* Descrição abaixo */}
-              <div className="w-full flex font-jaini text-sm text-gray-400 mt-0 text-center justify-center">
+              <div className="w-full flex font-jaini text-sm text-gray-400 mt-0 mb-2 text-center justify-center">
                 (Valor do Evento)
               </div>
             </div>

@@ -79,7 +79,7 @@
         "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais e para gerar textos e comentários totalmente em branco. Neste artigo, os jogadores podem criar nicks com os três tamanhos do espaço invisível através das ferramentas a seguir, que também permitem complementar o nome com vários outros símbolos, letras e caracteres especiais.",
         "value": "100 ",
         "location": "Av. Irmãos Pereira, 910 - Centro, Campo Mourão - PR, 87300-000",
-        "date": "2025-12-01",
+        "date": "2025-06-01T08:30:00",
         "image": "../../../assets/images/eventos/campanhabeneficente03.jpeg",
         "free": 1,
         "schedule": [
@@ -150,7 +150,7 @@
           "id": 3,
           "title": "Campanha Beneficente",
           "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais e para gerar textos e comentários totalmente em branco. Neste artigo, os jogadores podem criar nicks com os três tamanhos do espaço invisível através das ferramentas a seguir, que também permitem complementar o nome com vários outros símbolos, letras e caracteres especiais.",
-          "value": "15 reais + 1kg de alimento",
+          "value": "15 reais",
           "location": "Av. Irmãos Pereira, 910 - Centro, Campo Mourão - PR, 87300-000",
           "date": "2025-06-01T08:30:00",
           "image": "../../../assets/images/eventos/campanhabeneficente03.jpeg",
