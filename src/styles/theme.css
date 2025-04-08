@@ -1,99 +1,178 @@
 @import "tailwindcss";
 
 :root {
-    --color-primary: #e1e1e1;
-    --color-secondary: #ffff;
-    --color-terciary: #303030;
-    --color-botton: #ffcc00;
-    --color-background: #000;
+  --color-primary: #e1e1e1;
+  --color-secondary: #ffff;
+  --color-terciary: #303030;
+  --color-botton: #ffcc00;
+  --color-background: #000;
 
-  
-    --font-jaini: 'JainiPurva-Regular', serif;
-    --font-sans: 'Inter', sans-serif;
-    --font-serif: 'Merriweather', serif;
-  
-    --spacing-128: 32rem;
-    --spacing-64: 16rem;
-    --spacing-32: 8rem;
-    --spacing-16: 4rem;
-  
-    --font-xs: 0.75rem;
-    --font-sm: 0.875rem;
-    --font-base: 1rem;
-    --font-lg: 2rem;
-    --font-xl: 1.25rem;
-    --font-xll:1.50rem;
-    --font-xxl: 2.2rem;
-    --font-xxxl: 4.45rem;
-    --font-even: 3rem;
-    --font-title-evento:4rem;
+
+  --font-jaini: 'JainiPurva-Regular', serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Merriweather', serif;
+
+  --spacing-128: 32rem;
+  --spacing-64: 16rem;
+  --spacing-32: 8rem;
+  --spacing-16: 4rem;
+
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-base: 1rem;
+  --font-lg: 1.125rem;
+  --font-xl: 1.25rem;
+  --font-xll: 1.5rem;
+  --font-xxl: 2rem;
+  --font-xxxl: 2.5rem;
+  --font-even: 3rem;
+  --font-title-evento: 4rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-lg: 1.0625rem;
+    --font-xl: 1.125rem;
+    --font-xll: 1.25rem;
+    --font-xxl: 1.75rem;
+    --font-xxxl: 2.125rem;
+    --font-even: 2.5rem;
+    --font-title-evento: 3rem;
   }
-
-  @media (max-width: 768px) {
-    :root {
-        --font-lg: 1.5rem;
-        --font-xl: 1.25rem;
-        --font-xll: 1.25rem;
-        --font-xxl: 2rem;
-        --font-xxxl: 3rem;
-    }
 }
 
 @media (max-width: 480px) {
-    :root {
-        --font-lg: 1.7rem;
-        --font-xl: 1rem;
-        --font-xll: 1.3rem;
-        --font-xxl: 1.8rem;
-        --font-xxxl: 2rem;
-    }
+  :root {
+    --font-lg: 1rem;
+    --font-xl: 1.0625rem;
+    --font-xll: 1.125rem;
+    --font-xxl: 1.5rem;
+    --font-xxxl: 1.75rem;
+    --font-even: 2rem;
+    --font-title-evento: 2.5rem;
+  }
 }
-  
 
-  body {
-    background-color: var(--color-background);
-    color: var(--color-primary);
-    font-family: var(--font-sans);
-  }
-  
 
-  @font-face {
-    font-family: 'JainiPurva-Regular';
-    src: url('/fonts/jaini/JainiPurva-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  
-  .text-primary { color: var(--color-primary); }
-  .text-secondary { color: var(--color-secondary); }
-  .text-terciary { color: var(--color-terciary); }
-  .text-background { color: var(--color-background); }
-  .text-botton { color: var(--color-botton); }
-  
-  .bg-primary { background-color: var(--color-primary); }
-  .bg-secondary { background-color: var(--color-secondary); }
-  .bg-terciary { background-color: var(--color-terciary); }
-  .bg-background { background-color: var(--color-background); }
-  .bg-botton { background-color: var(--color-botton); }
-  
-  .font-jaini { font-family: var(--font-jaini); }
-  .font-sans { font-family: var(--font-sans); }
-  .font-serif { font-family: var(--font-serif); }
-  
-  .text-xs { font-size: var(--font-xs); }
-  .text-sm { font-size: var(--font-sm); }
-  .text-base { font-size: var(--font-base); }
-  .text-lg { font-size: var(--font-lg); }
-  .text-xl { font-size: var(--font-xl); }
-  .text-xll { font-size: var(--font-xll); }
-  .text-xxl { font-size: var(--font-xxl); }
-  .text-xxxl { font-size: var(--font-xxxl); }
-  .text-even { font-size: var(--font-even); }
-  .text-title-e { font-size: var(--font-title-evento); }
-  
-  .spacing-128 { padding: var(--spacing-128); }
-  .spacing-64 { padding: var(--spacing-64); }
-  .spacing-32 { padding: var(--spacing-32); }
-  .spacing-16 { padding: var(--spacing-16); }
-  
+body {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+}
+
+
+@font-face {
+  font-family: 'JainiPurva-Regular';
+  src: url('/fonts/jaini/JainiPurva-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-terciary {
+  color: var(--color-terciary);
+}
+
+.text-background {
+  color: var(--color-background);
+}
+
+.text-botton {
+  color: var(--color-botton);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-terciary {
+  background-color: var(--color-terciary);
+}
+
+.bg-background {
+  background-color: var(--color-background);
+}
+
+.bg-botton {
+  background-color: var(--color-botton);
+}
+
+.font-jaini {
+  font-family: var(--font-jaini);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.text-xs {
+  font-size: var(--font-xs);
+}
+
+.text-sm {
+  font-size: var(--font-sm);
+}
+
+.text-base {
+  font-size: var(--font-base);
+}
+
+.text-lg {
+  font-size: var(--font-lg);
+}
+
+.text-xl {
+  font-size: var(--font-xl);
+}
+
+.text-xll {
+  font-size: var(--font-xll);
+}
+
+.text-xxl {
+  font-size: var(--font-xxl);
+}
+
+.text-xxxl {
+  font-size: var(--font-xxxl);
+}
+
+.text-even {
+  font-size: var(--font-even);
+}
+
+.text-title-e {
+  font-size: var(--font-title-evento);
+}
+
+.spacing-128 {
+  padding: var(--spacing-128);
+}
+
+.spacing-64 {
+  padding: var(--spacing-64);
+}
+
+.spacing-32 {
+  padding: var(--spacing-32);
+}
+
+.spacing-16 {
+  padding: var(--spacing-16);
+}

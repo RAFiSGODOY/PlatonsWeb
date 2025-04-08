@@ -9,25 +9,25 @@ const CalendarioEvento = ({ value, location }) => {
   if (!isValidDate) return null;
 
   return (
-    <div className="flex justify-center items-center gap-4 bg-gray-100 rounded-xl p-4 shadow-inner">
+    <div className="flex justify-left items-center gap-4 rounded-xl p-4 box-com-shadow-externa">
       <div className="flex flex-col items-center">
-        <p className="text-4xl font-extrabold text-blue-700 font-jaini">
+        <p className="text-xxl font-extrabold text-blue-700 font-jaini">
           {DateTime.fromJSDate(value).toFormat("dd")}
         </p>
-        <p className="text-sm uppercase tracking-wide text-gray-600 font-jaini">
+        <p className="text-base uppercase tracking-wide text-gray-600 font-jaini">
           {DateTime.fromJSDate(value).toFormat("LLL")}
         </p>
       </div>
-      <div className="flex flex-col justify-center items-start">
+      <div className="flex flex-col justify-center items-start gap-2">
         <div className="flex items-center gap-2">
-          <Clock className="text-gray-800 w-5 h-5" />
+          <Clock className="text-blue-700 w-5 h-5" />
           <span className="text-sm text-gray-700 font-jaini">
-            {DateTime.fromJSDate(value).toFormat("HH:mm")}h
+            Início às {DateTime.fromJSDate(value).toFormat("HH:mm")}h
           </span>
         </div>
         <div className="flex items-center gap-2">
-          <MapPin className="text-gray-800 w-5 h-5" />
-          <span className="text-sm text-gray-700 font-jaini">
+          <MapPin className="text-blue-700 w-5 h-5" />
+          <span className="text-sm text-gray-800 font-jaini">
             {location}
           </span>
         </div>

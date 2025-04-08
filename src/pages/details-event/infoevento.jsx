@@ -19,7 +19,7 @@ const EventoDetalhesPage = () => {
 
   return (
    
-      <div className="relative z-10 bg-background">
+      <div className="relative z-10 bg-secondary">
         <EventoDetalhes evento={evento} />
         <BotaoVoltar />
       </div>
