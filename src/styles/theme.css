@@ -17,23 +17,23 @@
   --spacing-32: 8rem;
   --spacing-16: 4rem;
 
-  --font-xs: 0.75rem;
-  --font-sm: 0.875rem;
+  --font-xs: 0.80rem;
+  --font-sm: 0.975rem;
   --font-base: 1rem;
-  --font-lg: 1.125rem;
-  --font-xl: 1.25rem;
-  --font-xll: 1.5rem;
-  --font-xxl: 2rem;
-  --font-xxxl: 2.5rem;
-  --font-even: 3rem;
-  --font-title-evento: 4rem;
+  --font-lg: 1.325rem;
+  --font-xl: 1.45rem;
+  --font-xll: 1.4rem;
+  --font-xxl: 2.2rem;
+  --font-xxxl: 2.6rem;
+  --font-even: 3.1rem;
+  --font-title-evento: 4.1rem;
 }
 
 @media (max-width: 768px) {
   :root {
     --font-lg: 1.0625rem;
     --font-xl: 1.125rem;
-    --font-xll: 1.25rem;
+    --font-xll: 1.4rem;
     --font-xxl: 1.75rem;
     --font-xxxl: 2.125rem;
     --font-even: 2.5rem;
@@ -45,7 +45,7 @@
   :root {
     --font-lg: 1rem;
     --font-xl: 1.0625rem;
-    --font-xll: 1.125rem;
+    --font-xll: 1.3rem;
     --font-xxl: 1.5rem;
     --font-xxxl: 1.75rem;
     --font-even: 2rem;

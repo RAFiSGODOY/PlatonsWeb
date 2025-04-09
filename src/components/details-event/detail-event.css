@@ -1,79 +1,77 @@
-
 .bg-gradient-overlay-top {
-    position: absolute;
-    width: 100%;
-    height: 150px; 
-    top: 0;
-    left: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.9) 90%);
-    z-index: 10;
-  }
-  
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.9) 90%);
+  z-index: 10;
+}
+
 .bg-gradient-overlay-bottom {
-    position: absolute;
-    width: 100%;
-    height: 200px; 
-    bottom: 0; 
-    left: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 90%);
-    z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 90%);
+  z-index: 10;
 }
 
 .botao-efeito2 {
   transition: all 0.3s ease-in-out;
-  background-color: #000000a8; 
   color: #ffffff;
   cursor: pointer;
   z-index: 20;
 }
 
 .botao-efeito2:hover {
-  background-color: #efc107; 
   color: #ffffff;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .botao-efeito2:active {
-  transform: scale(0.95); 
+  transform: scale(0.95);
 }
 
-.cards{
-    background-color: #c6c6c6;
+.cards {
+  background-color: #c6c6c6;
 }
 
-.borda{
+.borda {
   border-color: rgba(0, 0, 0, 0.177);
   border-bottom-width: 1px;
-  
+
 }
 
-.borda2{
+.borda2 {
   border-color: #ffcc00;
   border-bottom-width: 1px;
-  
+
 }
 
-.value{
-  background-color:rgba(14, 161, 43, 0.942) ;
+.value {
+  background-color: rgba(14, 161, 43, 0.942);
   border-radius: 100%;
   padding: 2px;
-  
-}
-.value2{
-  color:rgba(14, 161, 43, 0.942) ;
-  
-  
+
 }
 
-.pago{
+.value2 {
+  color: rgba(14, 161, 43, 0.942);
+
+
+}
+
+.pago {
   border-width: 1px;
   border-radius: 100px;
-  border-color: rgb(14, 161, 43) ;
-  background-color: rgba(14, 161, 43, 0.085) ;
-  color: rgba(14, 161, 43, 0.942) ;
+  border-color: rgb(14, 161, 43);
+  background-color: rgba(14, 161, 43, 0.085);
+  color: rgba(14, 161, 43, 0.942);
 }
 
-.free{
+.free {
   border-width: 1px;
   border-radius: 100px;
   border-color: #ffcc00;
@@ -81,22 +79,23 @@
   color: #ffcc00;
 }
 
-.icone{
-  color: rgb(14, 161, 43) ;
+.icone {
+  color: rgb(14, 161, 43);
 }
-.icone2{
+
+.icone2 {
   color: #ffcc00;
 
 }
 
-.card-description{
+.card-description {
   border-width: 1px;
-  border-radius:10px;
+  border-radius: 10px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.back-icone{
+.back-icone {
   border-radius: 100%;
   padding: 2px;
 }
@@ -111,26 +110,22 @@
 /* Em telas menores (ex: até 640px), escala para caber em 50px */
 @media (max-width: 640px) {
   .calendar-wrapper .p-calendar {
-    transform: scale(0.5); /* ajusta até caber em 50px */
+    transform: scale(0.5);
+    /* ajusta até caber em 50px */
     height: 50px;
     overflow: hidden;
   }
 }
 
 
-.box-com-shadow-interna2 {
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
-  border: none;
-}
-
 .box-com-shadow-externa {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-.pt-atencao{
+.box-com-shadow-interna2 {
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pt-atencao {
   color: rgb(255, 106, 0);
 }
-
-
-
-

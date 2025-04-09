@@ -29,9 +29,9 @@ const BandaCard = ({ banda }) => {
     };
 
     return (
-        <div className="bg-white rounded-lg p-4 flex flex-col gap-4">
-            <div className="flex flex-col md:flex-row md:justify-between w-full">
-                <div className="flex flex-col sm:flex-row items-center gap-4">
+        <div className="bg-white  p-4 flex flex-col ">
+            <div className="flex flex-col md:flex-row md:justify-between w-full p-2 rounded-lg ">
+                <div className="flex flex-col sm:flex-row items-center gap-4 ">
                     <img
                         src={banda.image}
                         alt={banda.name}
@@ -39,11 +39,11 @@ const BandaCard = ({ banda }) => {
                     />
 
                     <div className="text-center sm:text-left">
-                        <p className="font-jaini text-gray-700 text-xxl">{banda.name}</p>
+                        <p className="font-jaini text-gray-700 text-xll">{banda.name}</p>
                         {banda.contato && (
-                            <div className="text-sm text-gray-600 mt-1 flex items-center gap-2 justify-center sm:justify-start">
+                            <div className="text-gray-600 mt-1 flex items-center gap-2 justify-center sm:justify-start">
                                 <Phone size={14} className="text-green-500" />
-                                <span>{banda.contato}</span>
+                                <span className="text-xs">{banda.contato}</span>
                                 <a
                                     href={`https://wa.me/${banda.contato.replace(/\D/g, "")}`}
                                     target="_blank"
@@ -88,7 +88,7 @@ const BandaCard = ({ banda }) => {
                         {banda.info.map((integrante, idx) => (
                             <li key={idx} className="flex items-center gap-2">
                                 <span className="flex items-center gap-1 text-gray-700 font-jaini">
-                                    <User size={14} className=" text-botton" /> {integrante.nome}
+                                    <User size={14} className=" text-blue-600" /> {integrante.nome}
                                 </span>
                                 <span className="flex items-center gap-1 text-sm text-gray-500 font-jaini whitespace-nowrap">
                                     - {getInstrumentIcon(integrante.cargo)} {integrante.cargo}

@@ -11,7 +11,7 @@ const periodIcons = {
 
 const BlocoPeriodoEvento = ({ schedule }) => {
   return (
-    <div className="p-6 rounded-xl box-com-shadow-externa bg-secondary">
+    <div className="p-6 rounded-xl  bg-secondary box-com-shadow-interna2">
       {schedule.map((periodo, index) => (
         <div key={index} className="mb-6">
           <div className="flex items-center gap-2 mb-2">

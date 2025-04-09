@@ -11,3 +11,8 @@
     cursor: pointer;
 
 }
+
+.borda-banda{
+    border-top-width: 2px;
+    border-color: #ffcc00;
+}
