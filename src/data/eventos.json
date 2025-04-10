@@ -149,15 +149,23 @@
     ],
     "alert": [
       {
-        "title": "Alert 1",
+        "tipe":"permitido",
+        "title": "Áreas Pet Friendly",
         "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais "
       },
       {
-        "title": "Alert 2",
+        "tipe": "proibido",
+        "title": "Proibido Entrada com Bebidas",
         "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais "
       },
       {
-        "title": "Alert 3",
+        "tipe": "importante",
+        "title": "Documento Obrigatório",
+        "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais"
+      },
+      {
+        "tipe": "info",
+        "title": "Estacionamento",
         "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais"
       }
     ],
@@ -171,7 +179,7 @@
     "id": 2,
     "title": "Campanha Beneficente",
     "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais e para gerar textos e comentários totalmente em branco. Neste artigo, os jogadores podem criar nicks com os três tamanhos do espaço invisível através das ferramentas a seguir, que também permitem complementar o nome com vários outros símbolos, letras e caracteres especiais.",
-    "value": "100 ",
+    "value": "0",
     "location": "Av. Irmãos Pereira, 910 - Centro, Campo Mourão - PR, 87300-000",
     "date": "2025-06-01T08:30:00",
     "image": "../../../assets/images/eventos/campanhabeneficente03.jpeg",

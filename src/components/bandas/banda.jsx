@@ -29,8 +29,8 @@ const BandaCard = ({ banda }) => {
     };
 
     return (
-        <div className="bg-white  p-4 flex flex-col ">
-            <div className="flex flex-col md:flex-row md:justify-between w-full p-2 rounded-lg ">
+        <div className="rounded-sm p-4 flex flex-col box-com-shadow-interna2  mt-4">
+            <div className="flex flex-col md:flex-row md:justify-between w-full py-2 rounded-lg ">
                 <div className="flex flex-col sm:flex-row items-center gap-4 ">
                     <img
                         src={banda.image}
