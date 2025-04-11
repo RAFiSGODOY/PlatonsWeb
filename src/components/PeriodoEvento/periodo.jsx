@@ -14,9 +14,9 @@ const BlocoPeriodoEvento = ({ schedule }) => {
     <div className="py-2 rounded-xl  bg-secondary px-4 ">
       {schedule.map((periodo, index) => (
         <div key={index} className="mb-6">
-          <div className="flex items-center justify-center gap-2 mb-2">
+          <div className="flex items-center justify-center gap-2 mb-2 ">
             {periodIcons[periodo.title] || <Clock size={10} className="text-gray-500" />}
-            <h3 className=" font-jaini text-base text-gray-500">{periodo.title}</h3>
+            <h3 className=" font-jaini text-sm text-gray-500">{periodo.title}</h3>
           </div>
           <ul className="space-y-4">
             {periodo.events.map((item, idx) => (
@@ -27,9 +27,9 @@ const BlocoPeriodoEvento = ({ schedule }) => {
                   {item.time}
                 </span>
                </div>
-              <li className="flex items-center justify-center gap-1 mt-1">
+              <li className="flex items-center justify-center gap-1 mt-1 ">
                 <Info size={12} className="text-gray-400" />
-                <span className="text-sm text-gray-400 font-jaini">
+                <span className="text-sm text-gray-400 font-jaini transition-all duration-300 hover:text-gray-700">
                   ({item.description})
                 </span>
                 

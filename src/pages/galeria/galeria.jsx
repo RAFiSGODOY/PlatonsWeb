@@ -79,7 +79,7 @@ function Galeria() {
           <img src="../../assets/images/patrocinadores/ROZANE.png" alt="Rozane Logo" className="h-12 md:h-16" />
           <img src="../../assets/images/patrocinadores/CLAUDINHO.jpeg" alt="Claudinho Logo" className="h-12 md:h-16" />
         </div>
-        <p className="mt-5 mb-5 font-jaini text-base">&copy; Copyright Moto Clube 2024.</p>
+        <p className="mt-5 mb-5 font-jaini text-base">&copy; Copyright  Platon´s Moto Clube 2024.</p>
       </footer>
     </div>
   );

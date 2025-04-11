@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ShieldCheck, Save, MapPin, Info, PiggyBank, Calendar, Coffee, Drum, AlertCircle, MonitorCog, Share2, Link, BadgeDollarSignIcon } from "lucide-react";
+import { ShieldCheck, Save, MapPin, Info, PiggyBank, Calendar, Coffee, Drum, AlertCircle, MonitorCog, Share2, Link, BadgeDollarSignIcon, HandCoins } from "lucide-react";
 import { DateTime } from "luxon";
 import "./detail-event.css";
 import CalendarioEvento from "../Calendario/calendario";
@@ -7,6 +7,7 @@ import BlocoPeriodoEvento from "../PeriodoEvento/periodo";
 import BandaCard from "../bandas/banda";
 import AlertEvento from "../alertEvento/alert";
 import ToastAviso from "../modalmessage/modal";
+import CardInfoPayment from "./cardinfopayment/cardinfo";
 
 
 const EventoDetalhes = ({ evento }) => {
@@ -14,6 +15,7 @@ const EventoDetalhes = ({ evento }) => {
   const [mensagemToast, setMensagemToast] = useState('');
   const [tipoToast, setTipoToast] = useState("positivo");
   const [selectedDate, setSelectedDate] = useState(null);
+  const [showPayments, setShowPayments] = useState(false);
 
   useEffect(() => {
     if (evento?.date) {
@@ -43,44 +45,30 @@ const EventoDetalhes = ({ evento }) => {
     setTipoToast(tipo);
     setMostrarToast(true);
   };
-
-
-
-
-
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
 
 
   return (
-    <div className="min-h-screen">
-      <div>
-        <div className="relative overflow-hidden shadow-xl">
-          <div className="relative w-full h-auto bg-secondary  px-6 py-10">
+    <div className="min-h-screen md:px-2 px-2 py-2">
+      <div className="mg-100">
+        <div className="relative overflow-hidden">
+          <div className="relative w-full h-auto bg-secondary">
+            <div className=" w-full h-80">
+              <img
+                src={evento.image}
+                alt={evento.title}
+                className="object-cover h-80 w-full rounded-xl"
+              />
+            </div>
             <div className="flex flex-col md:flex-row w-full h-full">
-              <div className="md:w-1/3 w-full h-96 md:h-auto">
-                <img
-                  src={evento.image}
-                  alt={evento.title}
-                  className="object-cover h-full w-full rounded-xl"
-                />
-              </div>
-              <div className="md:w-2/3 md:px-4 px-1 py-4 flex flex-col justify-start">
+              <div className=" md:px-4 w-full px-1 py-4 flex flex-col justify-start">
                 <div className="flex items-center justify-between gap-2 mb-2">
                   <div className="flex items-center gap-2">
                     <h1 className="text-2xl md:text-5xl font-jaini text-gray-700 font-bold">
                       {evento.title}
                     </h1>
-                    <div
-                      className={`flex items-center gap-1 px-2 py-1 rounded-full text-xs font-jaini ${evento.value == 0
-                          ? "bg-yellow-100 text-yellow-500"
-                          : "bg-green-100 text-green-500"
-                        }`}
-                    >
-                      <PiggyBank size={16} />
-                      {evento.value == 0 ? "Evento Gratuito" : "Evento Pago"}
-                    </div>
                   </div>
                   <button
                     onClick={handleCopiarLink}
@@ -90,128 +78,113 @@ const EventoDetalhes = ({ evento }) => {
                     <Share2 className="text-gray-600" size={20} />
                   </button>
                 </div>
-
-
                 <div
-                  className={`space-y-2 box-com-shadow-externa md:border-l-4 md:border-t-0 border-t-4 md:card-value md:w-[50%] p-2 mt-4 ${evento.value == 0 ? "border-yellow-300" : "border-green-500"
+                  className={`flex items-center gap-1 px-2 py-1 rounded-full text-xs font-jaini ${evento.value == 0
+                    ? "bg-yellow-50 text-yellow-500"
+                    : "bg-green-50 text-green-500"
                     }`}
                 >
-                  <div className="flex md:justify-start justify-center items-center gap-2">
-                    <BadgeDollarSignIcon
-                      size={20}
-                      className={evento.value == 0 ? "text-botton" : "text-green-600"}
-                    />
-                    <p className="font-jaini text-gray-600">Valor da Inscrição</p>
-                  </div>
+                  <PiggyBank size={16} />
+                  {evento.value == 0 ? "Evento Gratuito" : "Evento Pago"}
+                </div>
+              </div>
+            </div>
+          </div>
 
-                  <div className="flex items-center justify-between text-sm text-gray-400 font-jaini">
-                    <span>R$: 0,00</span>
-                    <span>R$: 100,00</span>
+          <div className="bg-secondary md:px-10 px-2 flex flex-col md:grid md:gap-x-10 md:grid-cols-3 md:min-h-[150vh] mt-2">
+            <div className="order-1 md:order-2 flex flex-col relative items-end justify-start md:sticky md:top-4 md:col-span-1 md:px-2">
+              <CardInfoPayment evento={evento} />
+              <div className="w-[350px] box-com-shadow-externa p-2 mt-4 rounded-xl transition-transform duration-1000 hover:scale-102 ">
+                <div className="flex justify-center items-center gap-2 border-b-1 border-gray-300 py-1">
+                  <Calendar size={18} className="text-blue-500" />
+                  <p className="text-base text-gray-600 font-jaini">Data e Localização</p>
+                </div>
+                <div className="flex w-full justify-center">
+                  <div className="flex w-full justify-start items-center text-center rounded-sm">
+                    <CalendarioEvento
+                      value={selectedDate}
+                      onChange={handleDateChange}
+                      location={evento.location}
+                    />
                   </div>
-                  <div className="relative h-4 overflow-hidden bg-gray-100 rounded">
-                    <div
-                      className="bg-green-500 text-sm font-jaini text-secondary text-center flex items-center justify-center leading-none rounded"
-                      style={{ width: `${evento.value}%` }}
-                    >
-                      R$: {Number(evento.value).toFixed(2)}
-                    </div>
+                </div>
+              </div>
+            </div>
+            <div className="order-2 md:order-1 space-y-2 md:col-span-2 mt-10">
+              <div className="px-2 mb-10">
+                <div className="flex items-center md:justify-center justify-center gap-2 mb-2">
+                  <Info size={18} className="text-blue-700" />
+                  <h2 className="text-lg text-gray-700 font-jaini">Sobre o Evento</h2>
+                </div>
+                <p className="transition-all duration-300 hover:text-gray-700 text-base text-gray-500 text-left font-jaini whitespace-pre-line leading-relaxed">
+                  ㅤ{evento.description}
+                </p>
+              </div>
+              <div className="flex grid grid-cols-1 md:grid-cols-2 items-start justify-center  gap-5 px-2 ">
+                <div className=" flex flex-col justify-center">
+                  <div className="flex justify-center items-center gap-2 mb-5">
+                    <MonitorCog size={20} className="text-blue-700" />
+                    <h2 className="text-xll text-center text-gray-700 font-jaini">Programação</h2>
                   </div>
-                  {evento.necessario && (
-                    <div className="justify-center items-center text-center text-green-500">
-                      +
-                      <span className="text-base  font-jaini text-gray-400 rounded-xl italic block">
-                        {evento.necessario}
-                      </span>
+                  <BlocoPeriodoEvento schedule={evento.schedule} />
+                </div>
+                <div className=" flex flex-col justify-center">
+                  <div className="flex items-center justify-center gap-2 mb-5">
+                    <Drum size={20} className="text-blue-700" />
+                    <h2 className="text-xll text-center text-gray-700 font-jaini">Bandas Confirmadas</h2>
+                  </div>
+                  {evento.bands?.length > 0 && (
+                    <div className="grid grid-cols-1 gap-6">
+                      {evento.bands.map((banda, index) => (
+                        <BandaCard key={index} banda={banda} />
+                      ))}
                     </div>
                   )}
-
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-white p-4 ">
-              <div className="flex items-center justify-center gap-2 mb-2">
-                <Info size={18} className="text-botton" />
-                <h2 className="text-base text-gray-600 font-jaini">Sobre o Evento</h2>
-              </div>
-              <p className="transition-all duration-300 hover:text-gray-500 text-sm text-gray-500 text-justify font-jaini whitespace-pre-line leading-relaxed">
-                {evento.description}
-              </p>
-            </div>
-            <div className="bg-white p-4 ">
-              <div className="flex items-center justify-center gap-2 mb-2">
-                <Calendar size={18} className="text-botton" />
-                <p className="text-base text-gray-600 font-jaini">Data e Localização</p>
-              </div>
-              <CalendarioEvento
-                value={selectedDate}
-                onChange={handleDateChange}
-                location={evento.location}
-              />
-            </div>
-          </div>
-
-          <div className="bg-secondary p-8 grid gap-x-20 grid-cols-1 md:grid-cols-2">
-            <div className="space-y-2">
-              <div className="flex justify-start  items-center gap-2">
-                <MonitorCog size={20} className="text-botton" />
-                <h2 className="text-lg text-gray-600 font-jaini ">Programação</h2>
-              </div>
-              <BlocoPeriodoEvento schedule={evento.schedule} />
-            </div>
-
-            <div className="space-y-2 ">
-              <div className="flex items-center justify-center gap-2">
-                <Drum size={20} className="text-botton" />
-                <h2 className="text-lg text-gray-600 font-jaini ">Bandas Confirmadas</h2>
-              </div>
-              {evento.bands?.length > 0 && (
-                <div className="grid grid-cols-1  gap-6">
-                  {evento.bands.map((banda, index) => (
-                    <BandaCard key={index} banda={banda} />
-                  ))}
-                </div>
-              )}
-            </div>
-
-
-          </div>
-          <div className="mb-4 ">
+          <div className="mt-10 ">
             <div className="flex items-center justify-center gap-2">
-              <ShieldCheck size={20} className="text-botton" />
+              <ShieldCheck size={20} className="text-blue-700" />
               <h2 className="text-xll text-center text-gray-700 font-jaini">
-                Informações do Evento
+                Regras do Evento
               </h2>
             </div>
             <AlertEvento evento={evento} />
           </div>
 
-          {evento.sponsors?.length > 0 && (
-            <div className="bg-gray-100 py-8 px-4">
-              <h2 className="text-xll text-center text-gray-700 font-jaini">Patrocinadores</h2>
-              <div className="flex flex-wrap justify-center items-center gap-6">
-                {evento.sponsors.map((logo, index) => (
-                  <img
-                    key={index}
-                    src={logo}
-                    alt={`Patrocinador ${index}`}
-                    className="h-12 md:h-16 object-contain"
-                  />
-                ))}
-              </div>
-            </div>
-          )}
 
-          <div className="bg-white py-6 px-8 flex justify-end">
-            <button className="botao-efeito2 bg-green-500 hover:bg-green-700 text-xl fixed bottom-2 right-2 hover:bg-blue-700 px-6 py-3 rounded-lg font-jaini shadow-md">
-              Confirmar Presença
-            </button>
+        </div>
+        <div className="flex flex-col text-center items-center text-sm justify-start mb-5 card-value p-2">
+          <div className="flex items-center  gap-2 mb-5">
+            <HandCoins size={20} className="text-blue-700" />
+            <p className="text-xll text-center text-gray-700 font-jaini mb-2">Patrocinadores do Evento</p>
           </div>
+
+          {evento.sponsors?.length > 0 && (
+
+            <div className="flex flex-wrap justify-center items-center gap-6">
+              {evento.sponsors.map((logo, index) => (
+                <img
+                  key={index}
+                  src={logo}
+                  alt={`Patrocinador ${index}`}
+                  className="h-16 md:h-32 object-contain "
+                />
+              ))}
+            </div>
+
+          )}
+        </div>
+        <div className="bg-white py-6 px-8 flex justify-end">
+          <button className=" animate-bounce botao-efeito2 bg-green-500 hover:bg-green-700 text-xl fixed bottom-2 right-2 hover:bg-blue-700 px-6 py-3 rounded-lg font-jaini shadow-md">
+            Quero Participar
+          </button>
         </div>
       </div>
-      <div className="absolute top-1 right-0 h-auto">
+      <div className="absolute top-2 right-2 h-auto">
         <img
           src="/assets/images/semzoeira.png"
           alt="Imagem fixa"
@@ -226,9 +199,6 @@ const EventoDetalhes = ({ evento }) => {
         onClose={() => setMostrarToast(false)}
         tipo={tipoToast}
       />
-
-
-
     </div>
   );
 };

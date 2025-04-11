@@ -2,12 +2,57 @@
   {
     "id": 1,
     "title": "1° Moto Fest - Peabiru",
-    "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais e para gerar textos e comentários totalmente em branco. Neste artigo, os jogadores podem criar nicks com os três tamanhos do espaço invisível através das ferramentas a seguir, que também permitem complementar o nome com vários outros símbolos, letras e caracteres especiais.",
+    "description":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of  (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, comes from a line in section 1.10.32.",
     "value": "30",
     "necessario": "1kg de alimento não perecível  ou  1L de água de coco",
     "location": "Av. Irmãos Pereira, 910 - Centro, Campo Mourão - PR, 87300-000",
     "date": "2025-06-01T08:30:00",
     "image": "../../../assets/images/eventos/1motofest.jpeg",
+    "payment": [
+      {
+        "id": 1,
+        "name": "Cartão de Crédito",
+        "image": "../../../assets/images/payment/visa.png",
+        "flags": [
+          {
+            "id":1,
+            "name": "Visa",
+            "image": "../../../assets/images/payment/visa.png"
+          },
+          {
+            "id":2,
+            "name": "Mastercard",
+            "image": "../../../assets/images/payment/mastercard.png"
+          },
+          {
+            "id":3,
+            "name": "Elo",
+            "image": "../../../assets/images/payment/elo.png"
+          },
+          {
+            "id":5,
+            "name": "Hipercard",
+            "image": "../../../assets/images/payment/hipercard.png"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Pix",
+        "image": "../../../assets/images/payment/pix.png"
+      },
+      {
+        "id": 3,
+        "name": "Boleto Bancário",
+        "image": "../../../assets/images/payment/boleto.png"
+      },
+      {
+        "id": 4,
+        "name": "Dinheiro",
+        "image": "../../../assets/images/payment/dinheiro.png"
+      }
+
+    ],
     "schedule": [
       {
         "title": "Manhã",
@@ -180,6 +225,7 @@
     "title": "Campanha Beneficente",
     "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais e para gerar textos e comentários totalmente em branco. Neste artigo, os jogadores podem criar nicks com os três tamanhos do espaço invisível através das ferramentas a seguir, que também permitem complementar o nome com vários outros símbolos, letras e caracteres especiais.",
     "value": "0",
+    "necessario": "Evento Gratuito",
     "location": "Av. Irmãos Pereira, 910 - Centro, Campo Mourão - PR, 87300-000",
     "date": "2025-06-01T08:30:00",
     "image": "../../../assets/images/eventos/campanhabeneficente03.jpeg",

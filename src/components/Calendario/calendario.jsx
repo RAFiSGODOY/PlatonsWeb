@@ -16,22 +16,22 @@ const CalendarioEvento = ({ value, location }) => {
         <p className="text-title-e font-extrabold text-blue-700 font-jaini">
           {data.toFormat("dd")}
         </p>
-        <span className="text-xxl tracking-wider text-gray-500 font-jaini">
+        <span className="text-xll tracking-wider text-gray-500 font-jaini">
           {data.toFormat("LLL").toUpperCase()}
         </span>
       </div>
 
       {/* Informações do evento */}
       <div className="flex flex-col items-start justify-start gap-1">
-        <div className="flex items-center gap-2">
-          <Clock size={15} className="text-blue-700" />
+        <div className="flex items-center gap-2 justify-start">
+          <Clock size={20} className="text-blue-700" />
           <span className="text-sm text-gray-400 font-jaini">
             Início às {data.toFormat("HH:mm")}h
           </span>
         </div>
         <div className="flex gap-2 text-center items-center">
-          <MapPinned size={15} className="text-blue-700" />
-          <span className="text-sm text-gray-400 font-jaini ">{location}</span>
+          <MapPinned size={20} className="text-blue-700" />
+          <span className="text-sm text-gray-400 font-jaini text-start ">{location}</span>
         </div>
       </div>
     </div>

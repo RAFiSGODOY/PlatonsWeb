@@ -130,7 +130,6 @@
   color: rgb(255, 106, 0);
 }
 
-.card-value{
-  border-top-right-radius: 10px;
-  border-bottom-right-radius:10px;
+.card-value {
+  border-radius: 20px;
 }

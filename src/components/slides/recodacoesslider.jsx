@@ -10,6 +10,17 @@ function RecordacoesCarousel() {
   const isMobile = window.innerWidth < 768;
   const itemsPerSlide = isMobile ? 1 : 3;
 
+  const formatarData = (dataISO) => {
+    const data = new Date(dataISO);
+    const dia = String(data.getDate()).padStart(2, "0");
+    const mes = String(data.getMonth() + 1).padStart(2, "0");
+    const ano = data.getFullYear();
+    const hora = String(data.getHours()).padStart(2, "0");
+    const minutos = String(data.getMinutes()).padStart(2, "0");
+
+    return `${dia}/${mes}/${ano} ${hora}:${minutos}`;
+  };
+
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + itemsPerSlide) % totalSlides);
   };
@@ -53,7 +64,7 @@ function RecordacoesCarousel() {
                   <Info className="w-4 h-4 text-secondary" /> {item.title}
                 </h3>
                 <p className="text-sm font-jaini text-primary flex items-center gap-2">
-                  <Calendar className="w-4 h-4 text-primary" /> {item.date}
+                  <Calendar className="w-4 h-4 text-primary" /> {formatarData(item.date).split(" ")[0]}
                 </p>
               </div>
             </div>

@@ -25,7 +25,7 @@ const AlertEvento = ({ evento }) => {
             key={index}
             className="bg-white border border-gray-200 rounded-2xl shadow-md p-5 hover:shadow-lg transition-shadow duration-200"
           >
-            <div className="flex items-center gap-3 mb-3">
+            <div className="flex items-center gap-1 mb-3">
               {iconMap[alert.tipe] || <Info size={18} className="text-gray-400" />}
               <h3 className="text-lg text-gray-700 font-jaini">
                 {alert.title}
