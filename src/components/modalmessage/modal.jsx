@@ -37,8 +37,8 @@ export default function ToastAviso({ mensagem, mostrar, onClose, tipo = "positiv
   const Icon = isPositivo ? CheckCircle : AlertTriangle;
 
   return (
-    <div className="fixed top-2 right-2 w-[50%] max-w-xs mx-auto sm:right-2 sm:mx-0 z-50">
-      <div className={`flex items-start gap-3 rounded-md border-l-4 ${borderColor} ${bgColor} p-2 shadow-lg text-black`}>
+    <div className="fixed top-1 right-1 w-[50%] max-w-xs mx-auto sm:right-2 sm:mx-0 z-50">
+      <div className={`flex items-start gap-3 border-l-4 ${borderColor} ${bgColor} p-2 shadow-lg text-black`}>
         <Icon className={`w-5 h-5 mt-0.5 flex-none ${iconColor}`} />
         <div className="flex-1">
           <div className="flex justify-between items-start gap-2">

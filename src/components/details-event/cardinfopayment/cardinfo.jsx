@@ -15,12 +15,14 @@ const CardInfoPayment = ({ evento }) => {
                     <ArrowRightIcon size={16} className="text-gray-400 absolute top-2 right-2" />
 
                     
-                    <div className="flex justify-center w-full items-center gap-2 border-b border-gray-300 py-1">
+                    <div className="flex justify-center w-full items-center gap-2  py-1">
+                    <div className="flex-grow border-t border-gray-200"></div>
                         <BadgeDollarSignIcon
                             size={20}
                             className={Number(evento.value) === 0 ? "text-yellow-400" : "text-green-400"}
                         />
                         <p className="font-jaini text-gray-600">Valor da Inscrição</p>
+                        <div className="flex-grow border-t border-gray-200"></div>
                     </div>
 
                     {/* Valor da inscrição */}

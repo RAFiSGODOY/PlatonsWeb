@@ -214,6 +214,24 @@
         "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais"
       }
     ],
+    "questions": [
+      {
+        "question":"Como funciona o pagamento do Evento?",
+        "answer": "Explicaçao de como funcionaria o Pagamento"
+      },
+      {
+        "question": "Como funciona o pagamento do Evento?",
+        "answer": "Proibido Entrada com Bebidas"
+      },
+      {
+        "question": "Como funciona o pagamento do Evento?",
+        "answer": "Documento Obrigatório"
+      },
+      {
+        "question": "Como funciona o pagamento do Evento?",
+        "answer": "Estacionamento"
+      }
+    ],
     "sponsors": [
       "../../../assets/images/patrocinadores/ABASSI.jpeg",
       "../../../assets/images/patrocinadores/CLAUDINHO.jpeg",
