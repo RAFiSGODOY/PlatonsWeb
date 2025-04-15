@@ -1,13 +1,50 @@
-import { useState } from "react";
-import { FaMotorcycle } from "react-icons/fa";
-import {
-    User, Mail, Phone, MapPin, Landmark, MessageCircle
-} from "lucide-react";
+import { useState } from 'react';
+import { getFunctions, httpsCallable } from 'firebase/functions';
+import { FaMotorcycle } from 'react-icons/fa';
+import { User, Mail, Phone, MapPin, Landmark, MessageCircle } from 'lucide-react';
 
 export default function ParticiparModal({ evento }) {
     const [mostrarModal, setMostrarModal] = useState(false);
     const [presenca, setPresenca] = useState(0);
     const [hover, setHover] = useState(0);
+    const [nome, setNome] = useState('');
+    const [email, setEmail] = useState('');
+    const [telefone, setTelefone] = useState('');
+    const [cidade, setCidade] = useState('');
+    const [estado, setEstado] = useState('');
+    const [dataNascimento, setDataNascimento] = useState('');
+    const [mensagem, setMensagem] = useState('');
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const functions = getFunctions();
+        const enviarConfirmacaoEvento = httpsCallable(functions, 'enviarConfirmacaoEvento');
+
+        try {
+            await enviarConfirmacaoEvento({
+                nome,
+                email,
+                eventoTitle: evento.title,
+                dataEvento: evento.date,
+                cidade,
+                estado,
+                presenca,
+            });
+            alert('E-mail de confirmação enviado!');
+            setMostrarModal(false);
+        } catch (error) {
+            console.error('Erro ao enviar o e-mail:', error);
+            alert('Houve um erro ao enviar o e-mail de confirmação.');
+        }
+    };
+
+    const handleTelefoneChange = (e) => {
+        let value = e.target.value.replace(/\D/g, ''); // Removendo tudo que não for número
+        value = value.replace(/^(\d{2})(\d)/g, '($1) $2'); // Formatação (XX) XXXXX-XXXX
+        value = value.replace(/(\d{5})(\d{1,4})$/, '$1-$2'); // Formatação final
+        setTelefone(value); // Atualizando o estado com o valor formatado
+    };
 
     return (
         <>
@@ -22,8 +59,8 @@ export default function ParticiparModal({ evento }) {
             </div>
 
             {mostrarModal && (
-                <div className="fixed inset-0 z-50 flex justify-center items-start backdrop-blur-sm bg-black/50 px-4 overflow-y-auto pt-0">
-                    <div className="bg-secondary text-gray-600 shadow-lg w-full h-auto rounded-xl max-w-3xl p-6 relative border border-green-700">
+                <div className="fixed right-0 inset-0 z-50 flex justify-end items-start  bg-black/50 overflow-y-auto pt-0">
+                    <div className="bg-secondary text-gray-600 w-full h-auto max-w-3xl p-6 relative border border-green-700">
                         <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none z-0">
                             <img
                                 src="/assets/images/logo.png"
@@ -37,11 +74,8 @@ export default function ParticiparModal({ evento }) {
                         >
                             &times;
                         </button>
-                        <div className=" flex flex-col justify-center items-center z-10">
-                            <p className="text-lg font-jaini text-center text-gray-600 tracking-wider leading-tight">
-                                Inscrição para o Evento:
-                            </p>
-                            <p className="text-xxl font-jaini font-bold text-center text-green-500 uppercase  tracking-wider leading-tight">
+                        <div className=" flex md:flex-row flex-col justify-center  items-center gap-2 z-10">
+                            <p className="text-xxxl font-jaini font-bold text-center text-gray-800 uppercase tracking-wider leading-tight">
                                 {evento.title}
                             </p>
                         </div>
@@ -61,6 +95,8 @@ export default function ParticiparModal({ evento }) {
                                         id="nome"
                                         className="pl-10 block px-2.5 pb-2.5 pt-4 w-full text-lg font-jaini text-gray-600 bg-transparent rounded-lg border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-green-500 peer"
                                         placeholder=" "
+                                        value={nome}
+                                        onChange={(e) => setNome(e.target.value)}
                                     />
                                     <label
                                         htmlFor="nome"
@@ -78,6 +114,8 @@ export default function ParticiparModal({ evento }) {
                                         id="email"
                                         className="pl-10 block px-2.5 pb-2.5 pt-4 w-full text-lg text-gray-600 font-jaini bg-transparent rounded-lg border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-green-500 peer"
                                         placeholder=" "
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
                                     />
                                     <label
                                         htmlFor="email"
@@ -93,14 +131,10 @@ export default function ParticiparModal({ evento }) {
                                     <input
                                         type="tel"
                                         id="telefone"
-                                        onChange={(e) => {
-                                            let value = e.target.value.replace(/\D/g, '');
-                                            value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
-                                            value = value.replace(/(\d{5})(\d{1,4})$/, '$1-$2');
-                                            e.target.value = value.slice(0, 15);
-                                        }}
                                         className="pl-10 block px-2.5 pb-2.5 pt-4 w-full text-lg text-gray-600 font-jaini bg-transparent rounded-lg border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-green-500 peer"
                                         placeholder=" "
+                                        value={telefone}
+                                        onChange={handleTelefoneChange}
                                     />
                                     <label
                                         htmlFor="telefone"
@@ -117,6 +151,8 @@ export default function ParticiparModal({ evento }) {
                                         id="data-nascimento"
                                         className="block px-3 pb-2.5 pt-4 w-full text-lg text-gray-600 font-jaini bg-transparent rounded-lg border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-green-500 peer"
                                         placeholder=" "
+                                        value={dataNascimento}
+                                        onChange={(e) => setDataNascimento(e.target.value)}
                                     />
                                     <label
                                         htmlFor="data-nascimento"
@@ -140,6 +176,8 @@ export default function ParticiparModal({ evento }) {
                                         id="cidade"
                                         className="pl-10 block px-2.5 pb-2.5 pt-4 w-full text-lg text-gray-600 font-jaini bg-transparent rounded-lg border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-green-500 peer"
                                         placeholder=" "
+                                        value={cidade}
+                                        onChange={(e) => setCidade(e.target.value)}
                                     />
                                     <label
                                         htmlFor="cidade"
@@ -155,6 +193,8 @@ export default function ParticiparModal({ evento }) {
                                         id="estado"
                                         className="pl-10 block px-2.5 pb-2.5 pt-4 w-full text-lg text-gray-600 font-jaini bg-transparent rounded-lg border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-green-500 peer"
                                         placeholder=" "
+                                        value={estado}
+                                        onChange={(e) => setEstado(e.target.value)}
                                     />
                                     <label
                                         htmlFor="estado"
@@ -207,6 +247,8 @@ export default function ParticiparModal({ evento }) {
                                         id="mensagem"
                                         className="pl-10 block w-full px-2.5 pt-4 pb-2.5 text-lg text-gray-600 font-jaini bg-transparent rounded-lg border border-gray-300 focus:outline-none focus:ring-0 focus:border-green-500 resize-none h-32 peer"
                                         placeholder=" "
+                                        value={mensagem}
+                                        onChange={(e) => setMensagem(e.target.value)}
                                     ></textarea>
                                     <label
                                         htmlFor="mensagem"
@@ -256,6 +298,7 @@ export default function ParticiparModal({ evento }) {
 
                                 <button
                                     type="submit"
+                                    onClick={handleSubmit}
                                     className="bg-green-500 cursor-pointer tracking-wider hover:bg-green-700 text-white px-6 py-3 rounded-lg font-jaini text-lg shadow-md transition duration-300"
                                 >
                                     Enviar Inscrição

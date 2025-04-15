@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ShieldCheck, Save, MapPin, Info, PiggyBank, Calendar, Coffee, Drum, AlertCircle, MonitorCog, Share2, Link, BadgeDollarSignIcon, HandCoins, CircleHelp, MailQuestion } from "lucide-react";
+import { Info, PiggyBank, Calendar,  Drum,  MonitorCog, Share2,  HandCoins, CircleHelp, MailQuestion } from "lucide-react";
 import { DateTime } from "luxon";
 import "./detail-event.css";
 import CalendarioEvento from "../Calendario/calendario";
@@ -17,7 +17,6 @@ const EventoDetalhes = ({ evento }) => {
   const [mensagemToast, setMensagemToast] = useState('');
   const [tipoToast, setTipoToast] = useState("positivo");
   const [selectedDate, setSelectedDate] = useState(null);
-  const [showPayments, setShowPayments] = useState(false);
 
   useEffect(() => {
     if (evento?.date) {

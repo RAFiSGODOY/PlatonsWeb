@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import "./galeria.css";
-import { useNavigate } from "react-router-dom";
 import recordacoesData from "../../data/recordacoes.json";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Gallery from "../../components/galeria/galeria";
 import BotaoVoltar from "../../components/buttonback/button";
 
 function Galeria() {
-  const navigate = useNavigate();
   const [paginaAtual, setPaginaAtual] = useState(1);
   const imagensPorPagina = 30;
   const totalPaginas = Math.ceil(recordacoesData.length / imagensPorPagina);
