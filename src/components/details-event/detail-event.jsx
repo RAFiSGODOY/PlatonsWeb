@@ -9,6 +9,7 @@ import AlertEvento from "../alertEvento/alert";
 import ToastAviso from "../modalmessage/modal";
 import CardInfoPayment from "./cardinfopayment/cardinfo";
 import Questions from "../Questions/questions";
+import ParticiparModal from "./ModalForm/ModalForm";
 
 
 const EventoDetalhes = ({ evento }) => {
@@ -93,7 +94,7 @@ const EventoDetalhes = ({ evento }) => {
           </div>
 
           <div className="bg-secondary md:px-10 px-2 flex flex-col md:grid md:gap-x-10 md:grid-cols-3 md:min-h-[150vh] mt-2">
-            <div className="order-1 md:order-2 flex flex-col relative items-end sticky top-24  md:col-span-1 md:px-2">
+            <div className="order-1 md:order-2 flex flex-col relative md:items-end items-center sticky top-24  md:col-span-1 md:px-2">
               <CardInfoPayment evento={evento} />
               <div className="w-[350px]  p-4 mt-4 rounded-xl transition-transform duration-1000 shadow-lg  hover:scale-102 ">
                 <div className="flex items-center w-full gap-2 mb-4">
@@ -220,12 +221,7 @@ const EventoDetalhes = ({ evento }) => {
             </div>
           )}
         </div>
-
-        <div className="bg-secondary py-6 px-8 flex justify-end">
-          <button aria-label="Botão Quero Participar" title="Participar Do Evento" className=" animate-bounce botao-efeito2 bg-green-500 hover:bg-green-700 text-xl fixed bottom-2 right-2 hover:bg-blue-700 px-6 py-3 rounded-lg font-jaini shadow-md">
-            Quero Participar
-          </button>
-        </div>
+          <ParticiparModal evento={evento} />
       </div>
       <div className="absolute top-2 right-2 h-auto">
         <img
