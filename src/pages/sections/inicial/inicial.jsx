@@ -18,9 +18,7 @@ function Inicial() {
             alt="Logo" 
             className="w-[15rem] min-w-[10rem] max-w-full mx-auto" 
           />
-          <p className="font-jaini" style={{ fontSize: "var(--font-xll)" }}>
-            QUEIMANDO O ASFALTO, LIBERTANDO ALMAS
-          </p>
+          
         </div>
 
         <div className="absolute bottom-15 left-1/2 transform -translate-x-1/2 flex flex-col items-center z-11 text-center">
