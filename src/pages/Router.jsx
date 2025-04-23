@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
 import React, { useEffect, useState } from "react";
-import Main from './main/main';
-import Galeria from './galeria/galeria.jsx';
-import Evento from './eventos/event.jsx';
-import EventoDetalhesPage from './details-event/infoevento.jsx';
-import LoadingScreen from './loadingscreen/loading.jsx';
+import PageMain from './main-page/main-page.jsx';
+import PageGallery from './platons-gallery/gallery.jsx';
+import PageEvents from './all-events/all-event.jsx';
+import PageEventDetails from './information-event/information-e.jsx';
+import PageLoadingScreen from './loading-page/loading.jsx';
 
 function RouterPages() {
 
@@ -31,13 +31,13 @@ function RouterPages() {
     });
   }, []);
 
-  if (loading) return <LoadingScreen />;
+  if (loading) return <PageLoadingScreen />;
   return (
     <Routes>
-      <Route path="/" element={<Main />} />
-      <Route path="/Galeria" element={<Galeria />} />
-      <Route path="/Eventos" element={<Evento />} />
-      <Route path="/Informação-Evento/:id" element={<EventoDetalhesPage />} />
+      <Route path="/" element={<PageMain />} />
+      <Route path="/Galeria" element={<PageGallery />} />
+      <Route path="/Eventos" element={<PageEvents />} />
+      <Route path="/Informação-Evento/:id" element={<PageEventDetails />} />
     </Routes>
   );
 }

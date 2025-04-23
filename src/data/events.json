@@ -1,0 +1,440 @@
+[
+  {
+    "id": 1,
+    "title": "1° Moto Fest - Peabiru",
+    "description":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of  (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, comes from a line in section 1.10.32.",
+    "value": "30",
+    "necessario": "1kg de alimento não perecível  ou  1L de água de coco",
+    "location": "Av. Irmãos Pereira, 910 - Centro, Campo Mourão - PR, 87300-000",
+    "date": "2025-06-01T08:30:00",
+    "image": "../../../assets/images/events-images/1motofest.jpeg",
+    "payment": [
+      {
+        "id": 1,
+        "name": "Cartão de Crédito",
+        "image": "../../../assets/images/types-payment/visa.png",
+        "flags": [
+          {
+            "id":1,
+            "name": "Visa",
+            "image": "../../../assets/images/types-payment/visa.png"
+          },
+          {
+            "id":2,
+            "name": "Mastercard",
+            "image": "../../../assets/images/types-payment/mastercard.png"
+          },
+          {
+            "id":3,
+            "name": "Elo",
+            "image": "../../../assets/images/types-payment/elo.png"
+          },
+          {
+            "id":5,
+            "name": "Hipercard",
+            "image": "../../../assets/images/types-payment/hipercard.png"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Pix",
+        "image": "../../../assets/images/types-payment/pix.png"
+      },
+      {
+        "id": 3,
+        "name": "Boleto Bancário",
+        "image": "../../../assets/images/types-payment/boleto.png"
+      },
+      {
+        "id": 4,
+        "name": "Dinheiro",
+        "image": "../../../assets/images/types-payment/dinheiro.png"
+      }
+
+    ],
+    "schedule": [
+      {
+        "title": "Manhã",
+        "events": [
+          {
+            "time": "08:30 - 10:00",
+            "description": "Horário de início ao café da manhã"
+          },
+          {
+            "time": "10:00 - 12:00",
+            "description": "Banda jofjsbdfbfbsb"
+          }
+        ]
+      },
+      {
+        "title": "Tarde",
+        "events": [
+          {
+            "time": "12:00 - 14:00",
+            "description": "Almoço e intervalo"
+          },
+          {
+            "time": "14:00 - 16:00",
+            "description": "Apresentação especial"
+          }
+        ]
+      },
+      {
+        "title": "Noite",
+        "events": [
+          {
+            "time": "18:00 - 20:00",
+            "description": "Show principal"
+          },
+          {
+            "time": "20:00 - 22:00",
+            "description": "Encerramento e agradecimentos"
+          }
+        ]
+      }
+    ],
+    "bands": [
+      {
+        "name": "Killer Queens",
+        "image": "../../../assets/images/events-images/BandaTeste.png",
+        "contato": "(44) 998412585",
+        "instagram": "https://instagram.com/killerqueenbanda",
+        "info": [
+          {
+            "nome": "João Nicola",
+            "cargo": "Vocal, Violão"
+          },
+          {
+            "nome": "Paulo Bruno",
+            "cargo": "Baixo"
+          },
+          {
+            "nome": "Bruno Panceri",
+            "cargo": "Bateria "
+          },
+          {
+            "nome": "Matheus Andrade",
+            "cargo": "Guitarra e Vocal "
+          },
+          {
+            "nome": "João Frare",
+            "cargo": "Guitarra "
+          },
+          {
+            "nome": "Gabriel Andrade",
+            "cargo": "Piano e Teclado"
+          }
+        ]
+      },
+      {
+        "name": "Killer Queens",
+        "image": "../../../assets/images/events-images/BandaTeste.png",
+        "contato": "(44) 998412585",
+        "instagram": "https://instagram.com/killerqueenbanda",
+        "info": [
+          {
+            "nome": "João Nicola",
+            "cargo": "Vocal, Violão"
+          },
+          {
+            "nome": "Paulo Bruno",
+            "cargo": "Baixo"
+          },
+          {
+            "nome": "Bruno Panceri",
+            "cargo": "Bateria "
+          },
+          {
+            "nome": "Matheus Andrade",
+            "cargo": "Guitarra e Vocal "
+          },
+          {
+            "nome": "João Frare",
+            "cargo": "Guitarra "
+          },
+          {
+            "nome": "Gabriel Andrade",
+            "cargo": "Piano e Teclado"
+          }
+        ]
+      },
+      {
+        "name": "Killer Queens",
+        "image": "../../../assets/images/events-images/BandaTeste.png",
+        "contato": "(44) 998412585",
+        "instagram": "https://instagram.com/killerqueenbanda",
+        "info": [
+          {
+            "nome": "João Nicola",
+            "cargo": "Vocal, Violão"
+          },
+          {
+            "nome": "Paulo Bruno",
+            "cargo": "Baixo"
+          },
+          {
+            "nome": "Bruno Panceri",
+            "cargo": "Bateria "
+          },
+          {
+            "nome": "Matheus Andrade",
+            "cargo": "Guitarra e Vocal "
+          },
+          {
+            "nome": "João Frare",
+            "cargo": "Guitarra "
+          },
+          {
+            "nome": "Gabriel Andrade",
+            "cargo": "Piano e Teclado"
+          }
+        ]
+      }
+    ],
+    "alert": [
+      {
+        "tipe":"permitido",
+        "title": "Áreas Pet Friendly",
+        "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais "
+      },
+      {
+        "tipe": "proibido",
+        "title": "Proibido Entrada com Bebidas",
+        "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais "
+      },
+      {
+        "tipe": "importante",
+        "title": "Documento Obrigatório",
+        "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais"
+      },
+      {
+        "tipe": "info",
+        "title": "Estacionamento",
+        "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais"
+      }
+    ],
+    "questions": [
+      {
+        "question":"Como funciona o pagamento do Evento?",
+        "answer": "Explicaçao de como funcionaria o Pagamento"
+      },
+      {
+        "question": "Como funciona o pagamento do Evento?",
+        "answer": "Proibido Entrada com Bebidas"
+      },
+      {
+        "question": "Como funciona o pagamento do Evento?",
+        "answer": "Documento Obrigatório"
+      },
+      {
+        "question": "Como funciona o pagamento do Evento?",
+        "answer": "Estacionamento"
+      }
+    ],
+    "sponsors": [
+      "../../../assets/images/platons-sponsors/ABASSI.jpeg",
+      "../../../assets/images/platons-sponsors/CLAUDINHO.jpeg",
+      "../../../assets/images/platons-sponsors/JMYA.jpeg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Campanha Beneficente",
+    "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais e para gerar textos e comentários totalmente em branco. Neste artigo, os jogadores podem criar nicks com os três tamanhos do espaço invisível através das ferramentas a seguir, que também permitem complementar o nome com vários outros símbolos, letras e caracteres especiais.",
+    "value": "0",
+    "necessario": "Evento Gratuito",
+    "location": "Av. Irmãos Pereira, 910 - Centro, Campo Mourão - PR, 87300-000",
+    "date": "2025-06-01T08:30:00",
+    "image": "../../../assets/images/eventos/campanhabeneficente03.jpeg",
+    "schedule": [
+      {
+        "title": "Manhã",
+        "events": [
+          {
+            "time": "08:00 - 10:00",
+            "description": "Horário de início ao café da manhã"
+          },
+          {
+            "time": "10:00 - 12:00",
+            "description": "Banda jofjsbdfbfbsb"
+          }
+        ]
+      },
+      {
+        "title": "Tarde",
+        "events": [
+          {
+            "time": "12:00 - 14:00",
+            "description": "Almoço e intervalo"
+          },
+          {
+            "time": "14:00 - 16:00",
+            "description": "Apresentação especial"
+          }
+        ]
+      },
+      {
+        "title": "Noite",
+        "events": [
+          {
+            "time": "18:00 - 20:00",
+            "description": "Show principal"
+          },
+          {
+            "time": "20:00 - 22:00",
+            "description": "Encerramento e agradecimentos"
+          }
+        ]
+      }
+    ],
+    "bands": [
+      {
+        "name": "Killer Queens",
+        "image": "../../../assets/images/eventos/BandaTeste.png",
+        "contato": "(44) 998412585",
+        "instagram": "https://instagram.com/killerqueenbanda",
+        "info": [
+          {
+            "nome": "João Nicola",
+            "cargo": "Vocal, Violão"
+          },
+          {
+            "nome": "Paulo Bruno",
+            "cargo": "Baixo"
+          },
+          {
+            "nome": "Bruno Panceri",
+            "cargo": "Bateria "
+          },
+          {
+            "nome": "Matheus Andrade",
+            "cargo": "Guitarra e Vocal "
+          },
+          {
+            "nome": "João Frare",
+            "cargo": "Guitarra "
+          },
+          {
+            "nome": "Gabriel Andrade",
+            "cargo": "Piano e Teclado"
+          }
+        ]
+      },
+      {
+        "name": "Nome da Banda 2",
+        "image": "../../../assets/images/eventos/BandaTeste.png",
+        "info": "Informações sobre a banda 2"
+      },
+      {
+        "name": "Nome da Banda 3",
+        "image": "../../../assets/images/eventos/BandaTeste.png",
+        "info": "Informações sobre a banda 3"
+      }
+    ],
+    "sponsors": [
+      "../../../assets/images/patrocinadores/logo1.png",
+      "../../../assets/images/patrocinadores/logo2.png",
+      "../../../assets/images/patrocinadores/logo3.png"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Campanha Beneficente",
+    "description": "dado que as caixas de texto do jogo Battle Royale da Garena não reconhecem o espaço tradicional. Também chamado letra invisível, ele também serve para criar nomes invisíveis em redes sociais e para gerar textos e comentários totalmente em branco. Neste artigo, os jogadores podem criar nicks com os três tamanhos do espaço invisível através das ferramentas a seguir, que também permitem complementar o nome com vários outros símbolos, letras e caracteres especiais.",
+    "value": "15 reais",
+    "location": "Av. Irmãos Pereira, 910 - Centro, Campo Mourão - PR, 87300-000",
+    "date": "2025-06-01T08:30:00",
+    "image": "../../../assets/images/eventos/campanhabeneficente03.jpeg",
+    "schedule": [
+      {
+        "title": "Manhã",
+        "events": [
+          {
+            "time": "08:00 - 10:00",
+            "description": "Horário de início ao café da manhã"
+          },
+          {
+            "time": "10:00 - 12:00",
+            "description": "Banda jofjsbdfbfbsb"
+          }
+        ]
+      },
+      {
+        "title": "Tarde",
+        "events": [
+          {
+            "time": "12:00 - 14:00",
+            "description": "Almoço e intervalo"
+          },
+          {
+            "time": "14:00 - 16:00",
+            "description": "Apresentação especial"
+          }
+        ]
+      },
+      {
+        "title": "Noite",
+        "events": [
+          {
+            "time": "18:00 - 20:00",
+            "description": "Show principal"
+          },
+          {
+            "time": "20:00 - 22:00",
+            "description": "Encerramento e agradecimentos"
+          }
+        ]
+      }
+    ],
+    "bands": [
+      {
+        "name": "Killer Queens",
+        "image": "../../../assets/images/eventos/BandaTeste.png",
+        "contato": "(44) 998412585",
+        "instagram": "https://instagram.com/killerqueenbanda",
+        "info": [
+          {
+            "nome": "João Nicola",
+            "cargo": "Vocal, Violão"
+          },
+          {
+            "nome": "Paulo Bruno",
+            "cargo": "Baixo"
+          },
+          {
+            "nome": "Bruno Panceri",
+            "cargo": "Bateria "
+          },
+          {
+            "nome": "Matheus Andrade",
+            "cargo": "Guitarra e Vocal "
+          },
+          {
+            "nome": "João Frare",
+            "cargo": "Guitarra "
+          },
+          {
+            "nome": "Gabriel Andrade",
+            "cargo": "Piano e Teclado"
+          }
+        ]
+      },
+      {
+        "name": "Nome da Banda 2",
+        "image": "../../../assets/images/eventos/BandaTeste.png",
+        "info": "Informações sobre a banda 2"
+      },
+      {
+        "name": "Nome da Banda 3",
+        "image": "../../../assets/images/eventos/BandaTeste.png",
+        "info": "Informações sobre a banda 3"
+      }
+    ],
+    "sponsors": [
+      "../../../assets/images/patrocinadores/logo1.png",
+      "../../../assets/images/patrocinadores/logo2.png",
+      "../../../assets/images/patrocinadores/logo3.png"
+    ]
+  }
+]
