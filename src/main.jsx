@@ -8,9 +8,9 @@ import './styles/theme.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-      <Router>
-        <ScrollToTop />
-        <RouterPages />
-      </Router>
+    <Router>
+      <ScrollToTop />
+      <RouterPages />
+    </Router>
   </StrictMode>
 );

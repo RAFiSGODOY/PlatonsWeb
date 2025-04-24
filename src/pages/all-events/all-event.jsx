@@ -4,8 +4,10 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import EventsData from "../../data/events.json";
 import EventsList from "../../components/events-page/events-list/events-list.jsx";
 import BackButton from "../../components/global/back-button/back-button.jsx";
+import Footer from "../../components/global/footer/footer.jsx";
 
 import "./all-event.css";
+
 
 
 function Events() {
@@ -70,19 +72,7 @@ function Events() {
           className="w-32 h-auto shadow-lg"
         />
       </div>
-
-      <footer className="mt-20 text-center text-sm">
-        <p className="mb-5 font-jaini text-base uppercase">Patrocinadores</p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <img src="/assets/images/patrocinadores/ABASSI.jpeg" alt="Abassi Logo" className="h-12 md:h-16" />
-          <img src="/assets/images/patrocinadores/JMYA.jpeg" alt="JMYA Logo" className="h-12 md:h-16" />
-          <img src="/assets/images/logo.png" alt="Platons Logo" className="h-12 md:h-16" />
-          <img src="/assets/images/patrocinadores/MAYAHOX.jpeg" alt="Mayahox Logo" className="h-12 md:h-16" />
-          <img src="/assets/images/patrocinadores/ROZANE.png" alt="Rozane Logo" className="h-12 md:h-16" />
-          <img src="/assets/images/patrocinadores/CLAUDINHO.jpeg" alt="Claudinho Logo" className="h-12 md:h-16" />
-        </div>
-        <p className="mt-5 mb-5 font-jaini text-base">&copy; Copyright Moto Clube 2024.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

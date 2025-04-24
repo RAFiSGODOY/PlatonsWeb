@@ -5,6 +5,7 @@ import Gallery from "../../components/gallery-page/gallery-photos/gallery-p.jsx"
 import BackButton from "../../components/global/back-button/back-button.jsx";
 
 import "./gallery.css";
+import Footer from "../../components/global/footer/footer.jsx";
 
 function PageGallery() {
   const [paginaAtual, setPaginaAtual] = useState(1);
@@ -68,18 +69,7 @@ function PageGallery() {
           className="w-32 h-auto shadow-lg"
         />
       </div>
-      <footer className="mt-30 text-center text-sm">
-        <p className="mb-5 font-jaini text-base uppercase">Patrocinadores</p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <img src="../../assets/images/patrocinadores/ABASSI.jpeg" alt="Abassi Logo" className="h-12 md:h-16" />
-          <img src="../../assets/images/patrocinadores/JMYA.jpeg" alt="JMYA Logo" className="h-12 md:h-16" />
-          <img src="../../assets/images/logo.png" alt="Platons Logo" className="h-12 md:h-16" />
-          <img src="../../assets/images/patrocinadores/MAYAHOX.jpeg" alt="Mayahox Logo" className="h-12 md:h-16" />
-          <img src="../../assets/images/patrocinadores/ROZANE.png" alt="Rozane Logo" className="h-12 md:h-16" />
-          <img src="../../assets/images/patrocinadores/CLAUDINHO.jpeg" alt="Claudinho Logo" className="h-12 md:h-16" />
-        </div>
-        <p className="mt-5 mb-5 font-jaini text-base">&copy; Copyright  Platon´s Moto Clube 2024.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

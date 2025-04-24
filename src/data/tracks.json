@@ -2,13 +2,13 @@
     {
       "title": "Helena",
       "artist": "My Chemical Romance",
-      "src": "/music/MyChemicalRomanceHelena.mp3",
+      "url": "/music/MyChemicalRomanceHelena.mp3",
       "cover": "/assets/images/capas/MyChemicalRomance.png"
     },
     {
       "title": "Welcome to the Black Parade",
       "artist": "My Chemical Romance",
-      "src": "/music/MyChemicalRomanceWelcomeTfoTheBlackParade.mp3",
+      "url": "/music/MyChemicalRomanceWelcomeTfoTheBlackParade.mp3",
       "cover": "/assets/images/capas/MyChemicalRomance.png"
     }
   ]
